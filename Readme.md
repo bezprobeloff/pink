@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Белов](https://up.htmlacademy.ru/adaptive/16/user/914819).
-* Наставник: `Неизвестно`.
+* Наставник: [Катя Микулянец](https://htmlacademy.ru/profile/id50166).
 
 ---
 
