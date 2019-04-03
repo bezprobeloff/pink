@@ -8,42 +8,47 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="./img/logo.svg" alt="Логотип приложения Pink" class="page-header__logo-image"  width="226" height="30">
+        <img src="./img/logo.svg" alt="Логотип приложения Pink" class="page-header__logo-image"  width="75" height="22">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html" class="site-list__text">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html" class="site-list__text">Фотографии</a></li>
-          <li class="site-list__item"><a href="#" class="site-list__text">Конкурс</a></li>
-          <li class="site-list__item"><a href="#" class="site-list__text">HTML Academy</a></li>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="#">Конкурс</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h2 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <div class="page-main__wrapper">
+        <h2 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </div>
     </main>
     <footer class="page-footer">
-      <img src="#" alt="Логотип" class="page-footer__logo">
-      <ul class="socials__list">
-        <li class="socials__item socials__item--twitter">
-          <a href="#" class="social__link">Мы в Твиттер</a>
-        </li>
-        <li class="socials__item socials__item--facebook">
-          <a href="#" class="social__link">Мы в Фейсбуке</a>
-        </li>
-        <li class="socials__item  socials__item--youtube">
-          <a href="#" class="social__link">Мы в Ютубе</a>
-        </li>
-      </ul>
-      <section class="copyright">
-        <h2 class="visually-hidden">Копирайт</h2>
-        <p class="copyright__text">Разработано
-          <a href="" class="copyright__link">
-            <img src="#" alt="Логотип HTML Academy" class="copyright__logo" width="20" height="20">
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="link page-footer__link-home">
+          <img src="#" alt="Логотип. Вернуться на главную" class="page-footer__logo" width="147" height="40">
+        </a>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="social__link social__link--twitter">Мы в Твиттер</a>
+          </li>
+          <li class="socials__item">
+            <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="social__link social__link--youtube">Мы в Ютубе</a>
+          </li>
+        </ul>
+        <section class="page-footer__copyright copyright">
+          <h2 class="visually-hidden">Копирайт</h2>
+          <b class="copyright__text">Разработано</b>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" target="_blank">
+            <img src="#" alt="Логотип HTML Academy. Перейти на сайт HTML Academy" class="copyright__logo" width="27" height="34">
           </a>
-        </p>
-      </section>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
