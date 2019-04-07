@@ -1,0 +1,23 @@
+.features {
+  background-color: $color_white;
+
+  &__slogan {
+    @include font(24px, 300, $color_gray, 1, center);
+  }
+
+  &__wrapper--list {
+    background-color: #f2f2f2;
+  }
+
+  &__list {
+    @include list_none;
+  }
+
+  &__title {
+    @include font(18px, bold, $color_gray, 1.71, center);
+  }
+
+  &__description {
+    @include font(14px, normal, $color_gray, 1.71, center);
+  }
+}

@@ -1,0 +1,15 @@
+@import "mixins.scss";
+@import "../variables.scss";
+
+.site-list {
+  @include list_none;
+
+  &__item {
+    @include font( 18px, bold, $color_white,  1.78, center);
+
+    a {
+      @include link_none;
+      color: inherit;
+    }
+  }
+}

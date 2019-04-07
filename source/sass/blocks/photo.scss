@@ -1,0 +1,25 @@
+.photo {
+  &__post {
+    background-color: #f2f2f2;
+  }
+
+  &__author-name {
+    @include font(14px, bold, $color_gray,  1.71, left);
+  }
+
+  &__date-post {
+    @include font(12px, 300, $color_gray,  1.71, left);
+  }
+
+  &__comment {
+    @include font(14px, 300, $color_gray,  1.71, left);
+  }
+
+  &__likes {
+    @include font(12px, normal, $color_red,  2, left);
+  }
+
+  &__slogan {
+    @include font(14px, normal, $color_gray,  2.14, center);
+  }
+}

@@ -1,0 +1,12 @@
+.download {
+  background-color: #18212d;
+
+  &__list {
+    @include list_none;
+  }
+
+  &__desc {
+    @include font(14px, 300, $color_white,  1.71, center);
+  }
+}
+

@@ -1,0 +1,11 @@
+.page-main {
+  background-color: $color_white;
+
+  &__title {
+    @include font(24px, 300, $color_white,  1, center);
+  }
+
+  &__description {
+    @include font(14px, normal, $color_gray,  2.14, center);
+  }
+}

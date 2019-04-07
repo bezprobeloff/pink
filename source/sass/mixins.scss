@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+@mixin list_none {
+  margin: 0;
+  list-style: none;
+}
+
+@mixin font($size: 18px,  $weight: bold, $color: $color_white,
+  $line-height: 1.78, $text-align: center) {
+  font-family: $font_name;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: $line-height;
+  letter-spacing: normal;
+  text-align: $text-align;
+  color: $color;
+}
+
+@mixin link_none {
+  text-decoration: none;
+}
+
+@mixin visually-hidden {
+  clip: rect(0 0 0 0);
+}
