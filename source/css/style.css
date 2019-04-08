@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"); }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0); }
+
+.page-header {
+  background-color: #253343; }
+
+.site-list {
+  margin: 0;
+  list-style: none; }
+  .site-list__item {
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff; }
+    .site-list__item a {
+      text-decoration: none;
+      color: inherit; }
+
+.download {
+  background-color: #18212d; }
+  .download__list {
+    margin: 0;
+    list-style: none; }
+  .download__desc {
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff; }
+
+.features {
+  background-color: #ffffff; }
+  .features__slogan {
+    font-family: "OpenSans";
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #283645; }
+  .features__wrapper--list {
+    background-color: #f2f2f2; }
+  .features__list {
+    margin: 0;
+    list-style: none; }
+  .features__title {
+    font-family: "OpenSans";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #283645; }
+  .features__description {
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #283645; }
+
+.page-main {
+  background-color: #ffffff; }
+  .page-main__title {
+    font-family: "OpenSans";
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff; }
+  .page-main__description {
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #283645; }
+
+.photo__post {
+  background-color: #f2f2f2; }
+
+.photo__author-name {
+  font-family: "OpenSans";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283645; }
+
+.photo__date-post {
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283645; }
+
+.photo__comment {
+  font-family: "OpenSans";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283645; }
+
+.photo__likes {
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #d22856; }
+
+.photo__slogan {
+  font-family: "OpenSans";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #283645; }
+
+.social__list {
+  margin: 0;
+  list-style: none; }
+
+.copyright__text {
+  font-family: "OpenSans";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283645; }
+
+.button {
+  text-decoration: none;
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
