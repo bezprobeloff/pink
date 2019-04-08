@@ -7,15 +7,25 @@
 
 @mixin font($size: 18px,  $weight: bold, $color: $color_white,
   $line-height: 1.78, $text-align: center) {
-  font-family: $font_name;
-  font-size: $size;
-  font-weight: $weight;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: $line-height;
-  letter-spacing: normal;
-  text-align: $text-align;
-  color: $color;
+  @if ($size != $font-size_base) {
+    font-size: $size;
+  }
+
+  @if ($weight != $font-weight_base) {
+    font-weight: $weight;
+  }
+
+  @if ($line-height != $line-height_base) {
+    line-height: $line-height;
+  }
+
+  @if ($text-align != $text-align_base) {
+    text-align: $text-align;
+  }
+
+  @if ($color!= $color_base) {
+    color: $color;
+  }
 }
 
 @mixin link_none {
@@ -24,4 +34,8 @@
 
 @mixin visually-hidden {
   clip: rect(0 0 0 0);
+}
+
+@mixin upper {
+  text-transform: uppercase;
 }

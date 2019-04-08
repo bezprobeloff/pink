@@ -4,189 +4,148 @@
   font-style: normal;
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"); }
 
+body {
+  margin: 0;
+  font-family: "OpenSans";
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: "left";
+  color: #283645; }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0); }
 
 .page-header {
-  background-color: #253343; }
+  background: url("/img/bg-back-mobile@1x.jpg") no-repeat #1d2631;
+  background-attachment: fixed; }
 
 .site-list {
   margin: 0;
   list-style: none; }
   .site-list__item {
-    font-family: "OpenSans";
     font-size: 18px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.78;
-    letter-spacing: normal;
     text-align: center;
-    color: #ffffff; }
+    color: #ffffff;
+    text-transform: uppercase; }
     .site-list__item a {
       text-decoration: none;
       color: inherit; }
 
 .download {
-  background-color: #18212d; }
+  background-color: #1d2631; }
   .download__list {
     margin: 0;
     list-style: none; }
   .download__desc {
-    font-family: "OpenSans";
-    font-size: 14px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff; }
+  .download__wrapper {
+    padding-top: 28px;
+    padding-bottom: 35px; }
 
 .features {
   background-color: #ffffff; }
   .features__slogan {
-    font-family: "OpenSans";
     font-size: 24px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1;
-    letter-spacing: normal;
-    text-align: center;
-    color: #283645; }
+    text-align: center; }
+  .features__wrapper--slogan {
+    margin-top: 46px; }
   .features__wrapper--list {
     background-color: #f2f2f2; }
   .features__list {
     margin: 0;
     list-style: none; }
+  .features__item {
+    padding-top: 40px; }
+  .features__item:last-child {
+    background-image: url("/img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat; }
   .features__title {
-    font-family: "OpenSans";
     font-size: 18px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-align: center;
-    color: #283645; }
+    text-align: center; }
   .features__description {
-    font-family: "OpenSans";
-    font-size: 14px;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-align: center;
-    color: #283645; }
+    text-align: center; }
 
 .page-main {
   background-color: #ffffff; }
   .page-main__title {
-    font-family: "OpenSans";
     font-size: 24px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff; }
   .page-main__description {
-    font-family: "OpenSans";
-    font-size: 14px;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 2.14;
-    letter-spacing: normal;
-    text-align: center;
-    color: #283645; }
+    text-align: center; }
+  .page-main__wrapper--title {
+    margin-top: 35px;
+    background-color: #1d2631; }
+  .page-main__wrapper--description {
+    margin-top: 54px;
+    margin-bottom: 54px; }
 
 .photo__post {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  padding: 25px 17px; }
+
+.photo__hit {
+  background-color: #d22856;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2;
+  color: #ffffff;
+  text-transform: uppercase; }
 
 .photo__author-name {
-  font-family: "OpenSans";
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  text-align: left;
-  color: #283645; }
+  font-weight: bold; }
 
 .photo__date-post {
-  font-family: "OpenSans";
-  font-size: 12px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  text-align: left;
-  color: #283645; }
-
-.photo__comment {
-  font-family: "OpenSans";
-  font-size: 14px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  text-align: left;
-  color: #283645; }
+  text-transform: uppercase;
+  font-size: 12px; }
 
 .photo__likes {
-  font-family: "OpenSans";
+  text-transform: uppercase;
   font-size: 12px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
   color: #d22856; }
 
 .photo__slogan {
-  font-family: "OpenSans";
-  font-size: 14px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2.14;
-  letter-spacing: normal;
-  text-align: center;
-  color: #283645; }
+  text-align: center; }
+
+.page-footer {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .page-footer__logo {
+    margin-bottom: 40px; }
+  .page-footer__social {
+    margin-bottom: 40px; }
 
 .social__list {
   margin: 0;
   list-style: none; }
 
 .copyright__text {
-  font-family: "OpenSans";
-  font-size: 14px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  color: #283645; }
+  line-height: 1.29; }
 
 .button {
   text-decoration: none;
-  font-family: "OpenSans";
   font-size: 18px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: center;
   color: #ffffff; }
 

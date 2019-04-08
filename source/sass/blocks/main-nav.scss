@@ -6,7 +6,7 @@
 
   &__item {
     @include font( 18px, bold, $color_white,  1.78, center);
-
+    @include upper;
     a {
       @include link_none;
       color: inherit;

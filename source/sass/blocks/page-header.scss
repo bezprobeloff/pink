@@ -2,6 +2,8 @@
 @import "variables.scss";
 
 .page-header {
-  background-color: #253343;
+  background: url("/img/bg-back-mobile@1x.jpg") no-repeat $bg_dark_blue;
+  background-attachment: fixed;
+  //opacity: 0.3;
 }
 

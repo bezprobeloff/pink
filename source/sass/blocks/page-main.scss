@@ -8,4 +8,14 @@
   &__description {
     @include font(14px, normal, $color_gray,  2.14, center);
   }
+
+  &__wrapper--title {
+    margin-top: 35px;
+    background-color: $bg_dark_blue;
+  }
+
+  &__wrapper--description {
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
 }

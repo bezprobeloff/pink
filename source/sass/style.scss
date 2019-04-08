@@ -8,6 +8,19 @@
   src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
 }
 
+body {
+  margin: 0;
+  font-family: $font_name;
+  font-size: $font-size_base;
+  font-weight: $font-weight_base;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: $line-height_base;
+  letter-spacing: normal;
+  text-align: $text-align_base;
+  color: $color_base;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -27,3 +40,4 @@
   @include link_none;
   @include font( 18px, bold, $color_white,  1, center);
 }
+
