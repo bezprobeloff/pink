@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -23,7 +23,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение Pink для работы с фото</h1>
       <div class="wrapper page-main__wrapper">
-        <img src="#" alt="Картинка приложения" class="page-main__img-title">
+        <img src="img/iphone-hand-mobile@1x.png" alt="Картинка приложения" class="page-main__img-title">
       </div>
       <section class="download">
         <div class="wrapper download__wrapper">
@@ -95,44 +95,40 @@
             <h2 class="visually-hidden">Расценки за версии</h2>
             <table class="price__list slider__list">
               <tr class="price__item">
-                <th></th>
-                <th>
+                <th class="cell price__cell--title">
+                </th>
+                <th class="cell price__cell--title">
                   <p>База</p>
                   <p>1,99 USD</p>
                 </th>
-                <th>
+                <th class="cell price__cell--title">
                   <p>Стандарт</p>
                   <p>3,99 USD</p>
                 </th>
-                <th>
+                <th class="cell price__cell--title">
                   <p>Анлим</p>
                   <p>9,99 USD</p>
                 </th>
               </tr>
               <tr class="price__item">
-                <td>Розовый фильтр</td>
-                <td>Да</td>
-                <td>Да</td>
-                <td>Да</td>
+                <td class="cell price__cell-function">Розовый фильтр</td>
+                <td class="cell price__cell-free price__cell-free--true">Да</td>
+                <td class="cell price__cell-free price__cell-free--true">Да</td>
+                <td class="cell price__cell-free price__cell-free--true">Да</td>
               </tr>
               <tr class="price__item">
-                  <td>Смайлики</td>
-                  <td>Нет</td>
-                  <td>Да</td>
-                  <td>Да</td>
+                <td class="cell price__cell-function">Смайлики</td>
+                <td class="cell price__cell-free price__cell-free--false">Нет</td>
+                <td class="cell price__cell-free price__cell-free--true">Да</td>
+                <td class="cell price__cell-free price__cell-free--true">Да</td>
               </tr>
               <tr class="price__item">
-                  <td>Комментарии</td>
-                  <td>Нет</td>
-                  <td>Нет</td>
-                  <td>Да</td>
+                <td class="cell price__cell-function">Комментарии</td>
+                <td class="cell price__cell-free price__cell-free--false">Нет</td>
+                <td class="cell price__cell-free price__cell-free--false">Нет</td>
+                <td class="cell price__cell-free price__cell-free--true">Да</td>
               </tr>
             </table>
-            <ul class="price__list slider__list">
-              <li class="price__item slider__item">
-                <p class="price__package">Стандарт</p>
-              </li>
-            </ul>
             <p class="price__toggles slider__toggles">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle" type="button">2</button>

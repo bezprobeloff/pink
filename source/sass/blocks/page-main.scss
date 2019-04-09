@@ -1,0 +1,21 @@
+.page-main {
+  background-color: $color_white;
+
+  &__title {
+    @include font(24px, 300, $color_white,  1, center);
+  }
+
+  &__description {
+    @include font(14px, normal, $color_gray,  2.14, center);
+  }
+
+  &__wrapper--title {
+    margin-top: 35px;
+    background-color: $bg_dark_blue;
+  }
+
+  &__wrapper--description {
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+}

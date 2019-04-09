@@ -1,0 +1,38 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.photo {
+  &__post {
+    background-color: $bg_gray;
+    padding: 25px 17px;
+  }
+
+  &__hit {
+    background-color: $color_red;
+
+    @include font(12px, bold, $color_white,  2, left);
+    @include upper;
+  }
+
+  &__author-name {
+    @include font(14px, bold, $color_gray,  1.71, left);
+  }
+
+  &__date-post {
+    @include upper;
+    @include font(12px, 300, $color_gray,  1.71, left);
+  }
+
+  &__comment {
+    @include font(14px, 300, $color_gray,  1.71, left);
+  }
+
+  &__likes {
+    @include upper;
+    @include font(12px, normal, $color_red,  2, left);
+  }
+
+  &__slogan {
+    @include font(14px, normal, $color_gray,  2.14, center);
+  }
+}

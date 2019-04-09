@@ -1,0 +1,5 @@
+.social {
+  &__list {
+    @include list_none;
+  }
+}
