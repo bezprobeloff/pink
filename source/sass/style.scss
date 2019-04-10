@@ -10,6 +10,10 @@
 
 body {
   margin: 0;
+  min-width: 320px;
+  //Это только для тестов
+  max-width: 320px;
+  //
   font-family: $font_name;
   font-size: $font-size_base;
   font-weight: $font-weight_base;
@@ -25,6 +29,15 @@ body {
   position: absolute;
   clip: rect(0 0 0 0);
 }
+
+.button {
+  display: block;
+  @include link_none;
+  @include font( 18px, bold, $color_white,  1, center);
+  border: 3px solid $color_white;
+  padding: 0;
+  border-radius: 25px;
+}
 //@import "normalize";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -36,8 +49,5 @@ body {
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 
-.button {
-  @include link_none;
-  @include font( 18px, bold, $color_white,  1, center);
-}
+
 

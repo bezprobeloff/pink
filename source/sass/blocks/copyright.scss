@@ -1,4 +1,6 @@
 .copyright {
+  display: flex;
+
   &__text {
     @include font(14px, normal, $color_gray,  1.29, left);
   }

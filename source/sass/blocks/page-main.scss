@@ -1,21 +1,50 @@
 .page-main {
+  margin: 0;
+  padding: 0;
   background-color: $color_white;
 
   &__title {
     @include font(24px, 300, $color_white,  1, center);
   }
 
-  &__description {
-    @include font(14px, normal, $color_gray,  2.14, center);
+
+  &__wrapper {
+
+  }
+
+  &__wrapper--logo {
+    height: 462px;
+    width: 320px;
+    background: url("/img/bg-back-mobile@1x.jpg") no-repeat $bg_dark_blue;
+  }
+
+  &__wrapper--logo::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 320px;
+    height: 287px;
+    top: 175px;
+    background: url("/img/iphone-hand-mobile@1x.png") no-repeat;
   }
 
   &__wrapper--title {
-    margin-top: 35px;
-    background-color: $bg_dark_blue;
+    height: 200px;
+    width: 320px;
+    background: url("/img/bg-back-mobile@1x.jpg") no-repeat $bg_dark_blue;
   }
 
   &__wrapper--description {
-    margin-top: 54px;
-    margin-bottom: 54px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    padding: 0;
+    margin: 0;
+    @include font(14px, 300, $color_gray,  2.14, center);
   }
 }
