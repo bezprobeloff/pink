@@ -7,7 +7,6 @@
 body {
   margin: 0;
   min-width: 320px;
-  max-width: 320px;
   font-family: "OpenSans";
   font-size: 14px;
   font-weight: 300;
@@ -17,6 +16,11 @@ body {
   letter-spacing: normal;
   text-align: "left";
   color: #283645; }
+
+@media (min-width: 1200px) {
+  body {
+    margin: 0 auto;
+    width: 1200px; } }
 
 .visually-hidden {
   position: absolute;
@@ -60,6 +64,17 @@ body {
     -webkit-box-shadow: 0 1px 0 0 #000000;
             box-shadow: 0 1px 0 0 #000000; }
 
+@media (min-width: 1200px) {
+  .page-header {
+    height: 110px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
 .main-nav {
   margin: 0;
   display: -webkit-box;
@@ -77,6 +92,15 @@ body {
     border-style: none;
     background: url("/img/icon-menu-burger.svg") no-repeat;
     font-size: 0; }
+
+@media (min-width: 1200px) {
+  .main-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .main-nav__toogle {
+      display: none; } }
 
 .site-list {
   margin: 0;
@@ -116,6 +140,19 @@ body {
       border: 1px solid coral;
       text-decoration: none;
       color: inherit; }
+
+@media (min-width: 1200px) {
+  .site-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .site-list__item {
+      padding-right: 80px;
+      font-weight: normal;
+      line-height: 1;
+      text-align: left;
+      text-transform: none; } }
 
 .download {
   display: -webkit-box;
@@ -223,10 +260,40 @@ body {
     font-weight: normal;
     text-align: center; }
 
+@media (min-width: 1200px) {
+  .features__slogan {
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center; }
+  .features__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .features__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.67;
+    text-align: center;
+    color: #000000; }
+  .features__description {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.67;
+    text-align: center; } }
+
 .page-main {
   margin: 0;
   padding: 0;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .page-main__title {
     font-size: 24px;
     line-height: 1;
@@ -265,6 +332,36 @@ body {
     line-height: 2.14;
     text-align: center; }
 
+@media (min-width: 660px) {
+  .page-main__wrapper--logo {
+    height: 729px;
+    width: 660px;
+    background: url("/img/bg-back-tablet@1x.jpg") no-repeat #1d2631;
+    background-size: 660px 729px; }
+  .page-main__wrapper--logo::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 660px;
+    height: 545px;
+    top: 175px;
+    background: url("/img/iphone-hand-tablet@1x.png") no-repeat; } }
+
+@media (min-width: 1200px) {
+  .page-main__wrapper--logo {
+    height: 729px;
+    width: 1200px;
+    background: url("/img/bg-back-desktop@1x.jpg") no-repeat #1d2631;
+    background-size: 1200px 729px; }
+  .page-main__wrapper--logo::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 1050px;
+    height: 545px;
+    top: 175px;
+    background: url("/img/iphone-hand-desktop@1x.png") no-repeat; } }
+
 .photo {
   padding: 0;
   margin: 0;
@@ -279,6 +376,14 @@ body {
     padding: 0;
     margin: 0;
     border: 1px solid black; }
+  .photo__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .photo__item {
     padding: 0;
     margin: 20px;
@@ -334,6 +439,27 @@ body {
     font-weight: normal;
     line-height: 2.14;
     text-align: center; }
+
+@media (min-width: 660px) {
+  .photo__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .photo__list__item {
+      width: 50%;
+      height: 50%; }
+    .photo__list__post {
+      width: 40%; }
+  .photo__comment {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; } }
+
+@media (min-width: 1200px) {
+  .photo__list__item {
+    width: 300px; } }
 
 .page-footer {
   display: -webkit-box;

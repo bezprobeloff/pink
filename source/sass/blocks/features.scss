@@ -45,3 +45,22 @@
     @include font(14px, normal, $color_gray, 1.71, center);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    &__slogan {
+      @include font(50px, normal, $color_gray, 1, center);
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__title {
+      @include font(30px, bold, $color_black, 1.67, center);
+    }
+    &__description {
+      @include font(18px, normal, $color_gray, 1.67, center);
+    }
+  }
+}

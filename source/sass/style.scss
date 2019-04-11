@@ -11,9 +11,7 @@
 body {
   margin: 0;
   min-width: 320px;
-  //Это только для тестов
-  max-width: 320px;
-  //
+
   font-family: $font_name;
   font-size: $font-size_base;
   font-weight: $font-weight_base;
@@ -23,6 +21,16 @@ body {
   letter-spacing: normal;
   text-align: $text-align_base;
   color: $color_base;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+@media (min-width: $desktop-width) {
+  body {
+    margin: 0 auto;
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -41,6 +49,7 @@ body {
 //@import "normalize";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
 @import "blocks/donwload.scss";
 @import "blocks/features.scss";
 @import "blocks/page-main.scss";

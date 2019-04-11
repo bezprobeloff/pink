@@ -25,3 +25,10 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-header {
+    height: 110px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
