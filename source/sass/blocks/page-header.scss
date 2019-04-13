@@ -4,6 +4,26 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  background-color: $bg_dark_blue;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 66px + 3px; //+3 'это только для открытого типа
+    //opacity: 0.3; это для закрытого типа
+    box-shadow: 0 1px 0 0 $color_black;
+  }
+}
+
+
+
+
+
+/*
+.page-header {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   min-height: 69px;
@@ -11,7 +31,7 @@
   /*
   background: url("/img/iphone-hand-mobile@1x.png") no-repeat $bg_dark_blue;
   background-position: 0 258px;
-  */
+
   //opacity: 0.3;
   &__logo {
     display: flex;
@@ -32,3 +52,4 @@
     justify-content: space-between;
   }
 }
+*/

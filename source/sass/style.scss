@@ -5,9 +5,59 @@
   font-family: $font-name;
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
+@font-face {
+  font-family: $font-name;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: $font-name;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  background-color: $color_white;
+  font-family: $font_name;
+  font-size: $font-size_base;
+  font-weight: $font-weight_base;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: $line-height_base;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color_base;
+
+  //для тестов
+  background-image: url("../pink-preview/preview/pink-index-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 5;
+}
+
+.wrapper {
+
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+
+/*
 body {
   margin: 0;
   min-width: 320px;
@@ -19,7 +69,7 @@ body {
   font-stretch: normal;
   line-height: $line-height_base;
   letter-spacing: normal;
-  text-align: $text-align_base;
+  text-align: left;
   color: $color_base;
 }
 
@@ -57,6 +107,6 @@ body {
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-
+*/
 
 

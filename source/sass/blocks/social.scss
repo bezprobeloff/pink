@@ -3,6 +3,5 @@
   flex-direction: column;
   &__list {
     display: flex;
-    @include list_none;
   }
 }

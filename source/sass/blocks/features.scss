@@ -17,7 +17,6 @@
   &__list {
     display: flex;
     flex-direction: column;
-    @include list_none;
   }
 
   &__item {
