@@ -1,6 +1,31 @@
 .page-main {
   margin: 0;
   padding: 0;
+  position: relative;
+
+  &__wrapper {
+    position: absolute;
+    top: -63px;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat $color_white;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 176px;
+      left: 0;
+      width: 320px;
+      height: 314px;
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+    }
+  }
+}
+
+
+/*
+.page-main {
+  margin: 0;
+  padding: 0;
   background-color: $color_white;
   display: flex;
   flex-direction: column;
@@ -87,3 +112,4 @@
     }
   }
 }
+*/

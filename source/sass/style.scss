@@ -39,14 +39,14 @@ body {
   color: $color_base;
 
   //для тестов
-  background-image: url("../pink-preview/preview/pink-index-mobile.jpg");
+  //background-image: url("../pink-preview/preview/pink-index-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 5;
 }
 
 .wrapper {
-
+  min-width: 320px;
 }
 
 .visually-hidden {
@@ -56,6 +56,22 @@ body {
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/donwload.scss";
+@import "blocks/features.scss";
+
+.button {
+  margin: 0;
+  padding: 0;
+  height: 55px;
+
+  box-sizing: border-box;
+  border: solid 3px $color_white;
+  border-radius: 25px;
+  @include font(18px, bold, $color_white, 1);
+  text-decoration: none;
+  text-align: center;
+}
 
 /*
 body {
