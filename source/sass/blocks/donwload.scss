@@ -4,6 +4,8 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    width: 320px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 28px;
@@ -21,13 +23,12 @@
     margin-top: 32px;
     margin-bottom: 28px;
     list-style: none;
-
   }
 
   &__item {
     margin: 0;
     padding: 0;
-    height: 56px;
+    height: auto;
   }
 
   &__icon {
@@ -69,8 +70,8 @@
     margin: 0;
 
     @include font(14px, 300, $color_white,  1.71);
+    text-align: center;
   }
-
 }
 /*
 .download {

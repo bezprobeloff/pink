@@ -1,4 +1,12 @@
 .page-footer {
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+  border: 1px solid chocolate;
+}
+
+/*
+.page-footer {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
@@ -12,3 +20,4 @@
     margin-bottom: 40px;
   }
 }
+*/
