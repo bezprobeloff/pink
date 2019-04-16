@@ -1,4 +1,6 @@
 .download {
+  padding: 0;
+  margin: 0;
   padding-top: 462px;
 
   &__wrapper {
@@ -71,6 +73,48 @@
 
     @include font(14px, 300, $color_white,  1.71);
     text-align: center;
+  }
+
+  &__slogan {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    padding-top: 0;
+    margin: 0;
+    height: 545px;
+    border: 1px solid palevioletred;
+    width: $tablet-width;
+
+    background-color: transparent;
+
+
+    &__wrapper {
+      //width: $tablet-width;
+
+      min-height: 545px;
+      margin: 0;
+      background-color: transparent;
+      border: 3px solid greenyellow;
+    }
+
+    &__slogan {
+      display: block;
+      padding: 0;
+
+      margin: 0;
+      margin-bottom: 45px;
+
+      @include font(40px, 300, $color_white,  1);
+      text-align: center;
+    }
+
+    &__desc {
+      font-size: 18px;
+      line-height: 1.33;
+    }
   }
 }
 /*

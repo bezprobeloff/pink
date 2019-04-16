@@ -3,6 +3,28 @@
   margin: 0 auto;
   width: 320px;
   border: 1px solid chocolate;
+
+  &__wrapper {
+    padding: 0;
+    padding: 40px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__link-home {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__logo {
+    padding: 0;
+    margin: 0;
+    display: block;
+    border: none;
+  }
 }
 
 /*

@@ -40,15 +40,28 @@ body {
 
   //для тестов
   //background-image: url("../pink-preview/preview/pink-index-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: 5;
+  //background-repeat: no-repeat;
+  //background-size: 100%;
+  //z-index: 5;
 }
 
 .wrapper {
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+    //для тестов
+    background-image: url("../pink-preview/preview/pink-index-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 660px;
+    background-position: 50px 0;
+    z-index: 8;
+  }
+
 }
 
 .visually-hidden {
@@ -77,6 +90,8 @@ body {
 @import "blocks/features.scss";
 @import "blocks/photo.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
 
 
 /*
