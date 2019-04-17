@@ -90,7 +90,6 @@
 
     background-color: transparent;
 
-
     &__wrapper {
       //width: $tablet-width;
 
@@ -117,71 +116,15 @@
     }
   }
 }
-/*
-.download {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 35px;
-  background-color: $bg_dark_blue;
-
-  &__list {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  &__item {
-    margin: 0;
-    padding: 0;
-    height: 47px;
-    width: 56px;
-    border: 1px solid coral;
-    font-size: 0;
-  }
-
-  &__icon {
-    height: 47px;
-    width: 56px;
-    border: 1px solid white;
-  }
-
-  &__icon::before {
-    content: "";
-    display: block;
-    position: relative;
-    background: url("/img/logo-apple.svg") no-repeat;
-    background-size: 20px 40px;
-    top: 0;
-    left: 0;
-
-
-  }
-
-  &__icon--apple {
-    background-size: 47px 56px;
-  }
-
-  &__desc {
-    @include font(14px, 300, $color_white,  1.71, center);
-  }
-
-  &__wrapper {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.button--download {
-  box-sizing: border-box;
-  height: 55px;
-  padding-top: 13px;
-}
 
 @media (min-width: $desktop-width) {
+  .download {
+    padding-top: 20px;
+    width: $desktop-width;
+    min-height: 650px;
 
+    &__wrapper {
+      width: 50%;
+    }
+  }
 }
-*/

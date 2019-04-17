@@ -55,13 +55,24 @@ body {
   body {
     min-width: $tablet-width;
     //для тестов
-    background-image: url("../pink-preview/preview/pink-index-tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: 660px;
-    background-position: 50px 0;
-    z-index: 8;
+    //background-image: url("../pink-preview/preview/pink-photo-tablet.jpg");
+    //background-repeat: no-repeat;
+    //background-size: 660px;
+    //background-position: 50px 0;
+    //z-index: 8;
   }
+}
 
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+    //для тестов
+    //background-image: url("../pink-preview/preview/pink-photo-tablet.jpg");
+    //background-repeat: no-repeat;
+    //background-size: 660px;
+    //background-position: 50px 0;
+    //z-index: 8;
+  }
 }
 
 .visually-hidden {
@@ -92,6 +103,7 @@ body {
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/article-news.scss";
 
 
 /*

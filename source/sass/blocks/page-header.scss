@@ -28,39 +28,11 @@
   }
 }
 
-
-
-
-/*
-.page-header {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  min-height: 69px;
-  background-color: $bg_dark_blue;
-  /*
-  background: url("/img/iphone-hand-mobile@1x.png") no-repeat $bg_dark_blue;
-  background-position: 0 258px;
-
-  //opacity: 0.3;
-  &__logo {
-    display: flex;
-    padding-top: 22px;
-    padding-left: 20px;
-    padding-bottom: 25px;
-    box-shadow: 0 1px 0 0 $color_black;
-  }
-  &__logo-image {
-
-  }
-}
-
 @media (min-width: $desktop-width) {
   .page-header {
-    height: 110px;
+    width: $desktop-width;
     flex-direction: row;
-    justify-content: space-between;
+    background-color: transparent;
   }
 }
-*/
+

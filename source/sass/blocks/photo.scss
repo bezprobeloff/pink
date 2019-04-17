@@ -5,10 +5,22 @@
   padding: 0;
   margin: 0;
 
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__item {
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
+
+    &--title {
+      .photo__post {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
   }
 
   &__picture {
@@ -72,7 +84,10 @@
   }
 
   &__wrapper {
-    width: 320px - 40px;
+    //width: 320px - 40px;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &__slogan {
@@ -85,110 +100,38 @@
   }
 }
 
-/*
-.photo {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-
-  &__picture {
-    padding: 0;
-    margin: 0;
-    border: 1px solid black;
-  }
-  &__list {
-    display: flex;
-    flex-direction: column;
-  }
-  &__item {
-    padding: 0;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__item--title {
-    margin: 0;
-  }
-
-  &__post {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin-top: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: $bg_gray;
-    padding-top: 0;
-    padding-left: 20px;
-  }
-
-  &__hit {
-    background-color: $color_red;
-
-    @include font(12px, bold, $color_white,  2, left);
-    @include upper;
-  }
-
-  &__author-name {
-    margin: 0;
-    padding: 0;
-    @include font(14px, bold, $color_gray,  1.71, left);
-  }
-
-  &__date-post {
-    @include upper;
-    @include font(12px, 300, $color_gray,  1.71, left);
-  }
-
-  &__comment {
-    margin: 0;
-    padding: 0;
-    @include font(14px, 300, $color_gray,  1.71, left);
-  }
-
-  &__likes {
-    @include upper;
-    @include font(12px, normal, $color_red,  2, left);
-  }
-
-  &__slogan {
-    @include font(14px, normal, $color_gray,  2.14, center);
-  }
-}
 
 @media (min-width: $tablet-width) {
   .photo {
+    width: $tablet-width;
+
+    &__wrapper {
+      width: $tablet-width;
+    }
 
     &__list {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
 
-      &__item {
-        width: 50%;
-        height: 50%;
-      }
-
-      &__post {
-        width: 40%;
-      }
-    }
-
-    &__comment {
-      flex-basis: 50%;
-    }
-  }
-}
-@media (min-width: $desktop-width) {
-  .photo {
-    &__list {
-      &__item {
+      .photo__item {
         width: 300px;
       }
     }
+
+    &__slogan {
+      @include font(18px, normal, $color_gray,  1.67);
+    }
   }
 }
 
-*/
+@media (min-width: $desktop-width) {
+  .photo {
+    width: $desktop-width;
+
+    &__wrapper {
+      width: $desktop-width;
+    }
+  }
+}
+
