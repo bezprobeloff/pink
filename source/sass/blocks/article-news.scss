@@ -7,21 +7,24 @@
     display: block;
     padding: 0;
     margin: 0;
-    width: $tablet-width;
+
+
     min-height: 387px;
-    position: relative;
+    //position: relative;
 
     border: 1px solid gold;
 
     &__wrapper {
-      //position: relative;
+
+      position: relative;
 
       border: 1px solid black;
       padding: 0;
       margin: 0;
-
-      width: 50%;
-      margin-left: 50%;
+      margin: 0 auto;
+      //width: $tablet-width;
+      //width: 50%;
+      padding-left: 320px;
       display: flex;
       flex-direction: column;
 
@@ -66,8 +69,3 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .article-news {
-    width: $desktop-width;
-  }
-}

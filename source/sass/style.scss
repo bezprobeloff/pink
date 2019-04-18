@@ -23,7 +23,7 @@
 }
 
 body {
-  min-width: 320px;
+  //min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -52,26 +52,14 @@ body {
 }
 
 @media (min-width: $tablet-width) {
-  body {
-    min-width: $tablet-width;
-    //для тестов
-    //background-image: url("../pink-preview/preview/pink-photo-tablet.jpg");
-    //background-repeat: no-repeat;
-    //background-size: 660px;
-    //background-position: 50px 0;
-    //z-index: 8;
+  .wrapper {
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    min-width: $desktop-width;
-    //для тестов
-    //background-image: url("../pink-preview/preview/pink-photo-tablet.jpg");
-    //background-repeat: no-repeat;
-    //background-size: 660px;
-    //background-position: 50px 0;
-    //z-index: 8;
+  .wrapper {
+    width: $desktop-width;
   }
 }
 
