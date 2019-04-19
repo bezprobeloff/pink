@@ -1,15 +1,30 @@
 @import "mixins.scss";
 @import "../variables.scss";
 
-.site-list {
-  @include list_none;
+.main-nav {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
-  &__item {
-    @include font( 18px, bold, $color_white,  1.78, center);
-    @include upper;
-    a {
-      @include link_none;
-      color: inherit;
-    }
+  display: flex;
+  flex-direction: column;
+
+  &__toogle {
+    position: absolute;
+    top: -66px;
+    right: 0;
+
+    height: 66px;
+    font-size: 0;
+    border-style: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: $desktop-width;
+    flex-direction: row;
+  }
+}
+

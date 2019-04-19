@@ -5,11 +5,29 @@
   font-family: $font-name;
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: $font-name;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: $font-name;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 
 body {
+  //min-width: 320px;
   margin: 0;
+  padding: 0;
+
+  background-color: $color_white;
   font-family: $font_name;
   font-size: $font-size_base;
   font-weight: $font-weight_base;
@@ -17,17 +35,108 @@ body {
   font-stretch: normal;
   line-height: $line-height_base;
   letter-spacing: normal;
-  text-align: $text-align_base;
+  text-align: left;
   color: $color_base;
+
+  //для тестов
+  //background-image: url("../pink-preview/preview/pink-index-mobile.jpg");
+  //background-repeat: no-repeat;
+  //background-size: 100%;
+  //z-index: 5;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: $desktop-width;
+  }
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  height: 55px;
+
+  box-sizing: border-box;
+  border: solid 3px $color_white;
+  border-radius: 25px;
+
+  @include font(18px, bold, $color_white, 1);
+  text-decoration: none;
+  text-align: center;
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/donwload.scss";
+@import "blocks/features.scss";
+@import "blocks/photo.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/article-news.scss";
+
+
+/*
+body {
+  margin: 0;
+  min-width: 320px;
+
+  font-family: $font_name;
+  font-size: $font-size_base;
+  font-weight: $font-weight_base;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: $line-height_base;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color_base;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+@media (min-width: $desktop-width) {
+  body {
+    margin: 0 auto;
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
 }
+
+.button {
+  display: block;
+  @include link_none;
+  @include font( 18px, bold, $color_white,  1, center);
+  border: 3px solid $color_white;
+  padding: 0;
+  border-radius: 25px;
+}
 //@import "normalize";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
 @import "blocks/donwload.scss";
 @import "blocks/features.scss";
 @import "blocks/page-main.scss";
@@ -35,9 +144,6 @@ body {
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+*/
 
-.button {
-  @include link_none;
-  @include font( 18px, bold, $color_white,  1, center);
-}
 

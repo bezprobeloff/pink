@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="./img/logo.svg" alt="Логотип приложения Pink" class="page-header__logo-image"  width="75" height="22">
+        <img src="../img/logo.svg" alt="Логотип приложения Pink" class="page-header__logo-image"  width="75" height="22">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">Открыть меню</button>
@@ -22,13 +23,11 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение Pink для работы с фото</h1>
-      <div class="wrapper page-main__wrapper">
-        <img src="img/iphone-hand-mobile@1x.png" alt="Картинка приложения" class="page-main__img-title">
-      </div>
       <section class="download">
         <div class="wrapper download__wrapper">
           <h2 class="visually-hidden">Установите приложение</h2>
-          <a href="#" class="button button--donwload">Скачать приложение</a>
+          <p class="download__slogan">Взгляните<br> на жизнь иначе!</p>
+          <a href="#" class="button button--download">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item"><a href="#" class="download__icon download__icon--apple">AppStore</a></li>
             <li class="download__item"><a href="#" class="download__icon download__icon--android">Market</a></li>
@@ -43,19 +42,19 @@
           <p class="features__slogan">Устали от серости мегаполиса?</p>
           <p class="features__slogan">Нам есть, что вам предложить!</p>
         </div>
-        <div class="wrapper features_wrapper features__wrapper--list">
+        <div class="wrapper features__wrapper features__wrapper--list">
           <ul class="features__list">
-            <li class="features__item">
+            <li class="features__item features__item--screen1">
               <h3 class="features__title">Поднимает настроение</h3>
               <p class="features__description">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--screen2">
               <h3 class="features__title">Меняет мир вокруг</h3>
               <p class="features__description">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--screen3">
               <h3 class="features__title">Заводит новых друзей</h3>
               <p class="features__description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -63,6 +62,19 @@
           </ul>
         </div>
       </section>
+      <article class="article-news">
+        <h2 class="visually-hidden">Статья о приложении</h2>
+        <div class="wrapper article-news__wrapper">
+          <p class="article-news__title">Эффект на 24 часа!</p>
+          <p class="article-news__desc">Британские ученые провели исследования
+            и доказали, что положительный эффект  от использования приложения длится
+            целые сутки!
+          </p>
+          <p class="article-news__link">
+            <a href="#">Узнать больше об исследовании</a>
+          </p>
+        </div>
+      </article>
       <section class="reviews">
         <div class="wrapper reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
@@ -136,6 +148,34 @@
             </p>
           </div>
       </section>
+
     </main>
+    <footer class="page-footer page-footer--none">
+      <div class="wrapper page-footer__wrapper">
+        <a href="index.html" class="link page-footer__link-home">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип. Вернуться на главную" class="page-footer__logo" width="147" height="40">
+        </a>
+        <section class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter">Мы в Твиттер</a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--youtube">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </section>
+        <section class="page-footer__copyright copyright">
+          <h2 class="visually-hidden">Копирайт</h2>
+          <b class="copyright__text">Разработано</b>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" target="_blank">
+            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy. Перейти на сайт HTML Academy" class="copyright__logo" width="27" height="34">
+          </a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>

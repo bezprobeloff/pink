@@ -2,37 +2,147 @@
 @import "mixins.scss";
 
 .photo {
-  &__post {
-    background-color: $bg_gray;
-    padding: 25px 17px;
+  padding: 0;
+  margin: 0;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
+    &--title {
+      .photo__post {
+        width: 280px;
+        margin: 0 auto;
+        //margin-left: 20px;
+        //margin-right: 20px;
+      }
+    }
+  }
+
+  &__picture {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__image {
+    padding: 0;
+    margin: 0;
+    display: block;
   }
 
   &__hit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
     background-color: $color_red;
 
-    @include font(12px, bold, $color_white,  2, left);
+    @include font(12px, bold, $color_white,  2);
     @include upper;
   }
 
+  &__post {
+    padding: 0;
+    margin: 0;
+    background-color: $bg_gray;
+    border: 1px solid coral;
+  }
+
+  &__author {
+    padding: 0;
+    margin: 0;
+  }
+
   &__author-name {
-    @include font(14px, bold, $color_gray,  1.71, left);
+    padding: 0;
+    margin: 0;
+
+    @include font(14px, bold, $color_gray,  1.71);
+    font-style: normal;
   }
 
   &__date-post {
     @include upper;
-    @include font(12px, 300, $color_gray,  1.71, left);
+    @include font(12px, 300, $color_gray,  1.71);
   }
 
   &__comment {
-    @include font(14px, 300, $color_gray,  1.71, left);
+    padding: 0;
+    margin: 0;
+
+    @include font(14px, 300, $color_gray,  1.71);
   }
 
   &__likes {
     @include upper;
-    @include font(12px, normal, $color_red,  2, left);
+    @include font(12px, normal, $color_red,  2);
+  }
+
+  &__wrapper {
+    //width: 320px - 40px;
+
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &__slogan {
-    @include font(14px, normal, $color_gray,  2.14, center);
+    padding: 0;
+    margin: 0;
+
+    @include font(14px, normal, $color_gray,  2.14);
+    text-align: center;
+    border: 1px solid cornflowerblue;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .photo {
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .photo__item {
+        width: 300px;
+      }
+    }
+
+    &__item {
+      &--title {
+        .photo__post {
+          width: 620px;
+          margin: 0 auto;
+          //margin-left: 20px;
+          //margin-right: 20px;
+        }
+      }
+    }
+
+    &__slogan {
+      @include font(18px, normal, $color_gray,  1.67);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    &__item {
+      &--title {
+        .photo__post {
+          width: 1160px;
+          margin: 0 auto;
+          //margin-left: 20px;
+          //margin-right: 20px;
+        }
+      }
+    }
   }
 }

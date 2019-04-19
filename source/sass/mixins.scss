@@ -1,12 +1,8 @@
 @import "variables.scss";
 
-@mixin list_none {
-  margin: 0;
-  list-style: none;
-}
-
 @mixin font($size: 18px,  $weight: bold, $color: $color_white,
-  $line-height: 1.78, $text-align: center) {
+  $line-height: 1.78) {
+
   @if ($size != $font-size_base) {
     font-size: $size;
   }
@@ -19,10 +15,6 @@
     line-height: $line-height;
   }
 
-  @if ($text-align != $text-align_base) {
-    text-align: $text-align;
-  }
-
   @if ($color!= $color_base) {
     color: $color;
   }
@@ -33,7 +25,19 @@
 }
 
 @mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @mixin upper {
