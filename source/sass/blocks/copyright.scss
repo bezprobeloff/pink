@@ -1,5 +1,6 @@
 .copyright {
   padding: 0;
+  padding-top: 38px;
   margin: 0;
   display: flex;
   align-items: center;
@@ -7,6 +8,7 @@
   &__text {
     padding: 0;
     margin: 0;
+    margin-right: 14px;
 
     @include font(14px, normal, $color_gray,  1.29);
   }
@@ -20,5 +22,14 @@
     padding: 0;
     margin: 0;
     display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    //justify-self: flex-end;
+    padding-top: 12px;
+    margin-left: auto;
   }
 }

@@ -1,8 +1,7 @@
 .download {
   padding: 0;
   margin: 0;
-  //padding-top: 462px;
-  padding-top: 462px;
+  padding-top: 395px;
 
   &__wrapper {
     margin: 0 auto;
@@ -13,7 +12,7 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 28px;
-    padding-bottom: 35px;
+    padding-bottom: 31px;
 
     background-color: $bg_dark_blue;
 
@@ -21,7 +20,7 @@
       content: "";
       display: block;
       position: absolute;
-      top: -290px;
+      top: -286px;
       left: 0;
       width: 320px;
       height: 314px;
@@ -32,12 +31,12 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 0 20px;
     margin-top: 32px;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
     list-style: none;
   }
 
@@ -96,26 +95,20 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    padding-top: 0;
+    padding: 0;
     margin: 0;
     min-height: 545px;
-    border: 1px solid palevioletred;
-
     background-color: transparent;
 
     &__wrapper {
-      //width: $tablet-width;
-
       min-height: 619px;
-      margin: 0;
-      margin: 0 auto;
-      padding-right: 320px;
+      padding-top: 92px;
+      padding-right: 340px;
       background-color: transparent;
-      border: 3px solid greenyellow;
 
       &::before {
-        top: 68px;
-        left: 0;
+        top: 73px;
+        left: -20px;
         width: 660px;
         height: 545px;
         background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
@@ -127,10 +120,21 @@
       padding: 0;
 
       margin: 0;
-      margin-bottom: 45px;
+      margin-bottom: 34px;
 
-      @include font(40px, 300, $color_white,  1);
+      @include font(40px, 300, $color_white,  1.18);
       text-align: center;
+    }
+
+    &__list {
+      justify-content: space-around;
+      margin: 0 28px;
+      margin-top: 45px;
+      margin-bottom: 39px;
+      list-style: none;
+    }
+
+    &__item {
     }
 
     &__desc {
@@ -142,20 +146,32 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    padding-top: 20px;
+    padding-top: 97px;
     min-height: 650px;
 
     &__wrapper {
+      padding-top: 0;
       padding-left: 130px;
       padding-right: 770px;
 
       &::before {
-        top: 68px;
-        left: 0;
+        top: 0;
+        left: 146px;
         width: 1050px;
         height: 645px;
         background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
       }
+    }
+
+    &__slogan {
+      padding-top: 11px;
+      margin-bottom: 53px;
+
+      font-size: 50px;
+    }
+    &__list {
+      margin-top: 67px;
+      margin-bottom: 57px;
     }
   }
 }

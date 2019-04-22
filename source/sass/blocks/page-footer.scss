@@ -1,8 +1,7 @@
 .page-footer {
   padding: 0;
   margin: 0;
-  //margin: 0 auto;
-  border: 1px solid chocolate;
+  //border: 1px solid chocolate;
 
   &__wrapper {
     padding: 0;
@@ -10,13 +9,13 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
   }
 
   &__link-home {
     padding: 0;
     margin: 0;
+    margin-bottom: 40px;
   }
 
   &__logo {
@@ -38,7 +37,16 @@
   .page-footer {
     &__wrapper {
       flex-direction: row;
-      justify-content: space-between;
+      align-items: flex-start;
+      //padding-top: 40px;
+      padding: 36px 20px;
+      //padding-bottom: 36px;
+      //justify-content: space-between;
+    }
+
+    &__link-home {
+      padding: 0;
+      margin: 0;
     }
   }
 }

@@ -8,23 +8,14 @@
     padding: 0;
     margin: 0;
 
-
     min-height: 387px;
-    //position: relative;
 
-    border: 1px solid gold;
 
     &__wrapper {
-
       position: relative;
-
-      border: 1px solid black;
       padding: 0;
-      margin: 0;
-      margin: 0 auto;
-      //width: $tablet-width;
-      //width: 50%;
-      padding-left: 320px;
+      padding-top: 95px;
+      padding-left: 329px;
       display: flex;
       flex-direction: column;
 
@@ -32,19 +23,20 @@
         content: "";
         display: block;
         position: absolute;
-        top: 0;
+        top: 58px;
         left: 20px;
         width: 238px;
         height: 276px;
-        border: 1px solid red;
 
         background: url("../img/icon-timer.svg") no-repeat;
+        background-size: contain;
       }
     }
 
     &__title {
       padding: 0;
       margin: 0;
+      margin-bottom: 10px;
 
       @include font(30px, bold, $color_black, 1.2);
     }
@@ -52,8 +44,9 @@
     &__desc {
       padding: 0;
       margin: 0;
+      margin-bottom: 10px;
 
-      @include font(14px, normal, $color_gray, 1.71);
+      @include font(14px, normal, $color_gray, 1.72);
     }
 
     &__link {
@@ -68,4 +61,3 @@
     }
   }
 }
-

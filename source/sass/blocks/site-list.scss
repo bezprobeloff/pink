@@ -31,6 +31,10 @@
       color: inherit;
     }
   }
+
+  .main-nav--closed &__item {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -43,6 +47,8 @@
     &__item {
       min-height: 110px;
       background-color: transparent;
+      font-weight: normal;
+      line-height: 1;
     }
   }
 }

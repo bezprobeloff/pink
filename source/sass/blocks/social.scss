@@ -12,9 +12,13 @@
   &__item {
     padding: 0;
     margin: 0;
+    margin-right: 11px;
     height: 52px;
     width: 52px;
-    border: 1px solid chocolate;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -50,6 +54,14 @@
     &--youtube::before {
       background: url("../img/icon-youtube.svg") no-repeat 15px 14px;
       background-position: center;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    &__list {
+      padding-left: 73px;
     }
   }
 }
