@@ -143,22 +143,35 @@
 
 @media (min-width: $desktop-width) {
   .features {
+    padding-bottom: 28px;
+
     &__wrapper {
-      border: 1px solid black;
+      &--slogan {
+        padding-top: 67px;
+        padding-bottom: 76px;
+      }
 
       &--list::before {
         display: none;
       }
     }
 
+    &__slogan {
+      font-size: 50px;
+    }
+
     &__list {
       flex-direction: row;
-      justify-content: space-between;
+      //justify-content: space-between;
+      justify-content: center;
       padding: 0;
     }
 
     &__item {
-      width: 300px;
+      width: 286px;
+      margin: 0;
+      margin-right: 35px;
+      //border: 1px solid red;
 
       &::before {
         content: "";
@@ -168,9 +181,13 @@
         top: 0;
         left: 0;
         width: 300px;
-        height: 361px;
+        height: 357px;
         background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat;
         z-index: 2;
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
 
       &--screen1::before {
@@ -187,13 +204,16 @@
     }
 
     &__title {
-      @include font(30px, bold, $color_gray, 1.67);
+      @include font(30px, bold, $color_gray, 1);
+      margin: 0 30px;
+      padding-bottom: 24px;
       text-align: center;
     }
 
     &__description {
       @include font(18px, normal, $color_gray, 1.67);
       text-align: center;
+      margin: 0 20px;
     }
   }
 }

@@ -33,3 +33,11 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

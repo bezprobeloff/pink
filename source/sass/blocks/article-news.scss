@@ -61,3 +61,42 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .article-news {
+    &__wrapper {
+      padding-left: 496px;
+      padding-right: 130px;
+      padding-top: 109px;
+      padding-bottom: 46px;
+      min-height: 429px;
+
+      &::before {
+        top: 17px;
+        left: 130px;
+        width: 298px;
+        height: 345px;
+      }
+    }
+
+    &__title {
+      padding-bottom: 11px;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__desc {
+      margin-bottom: 31px;
+      font-size: 18px;
+      line-height: 1.67;
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 1.67;
+      //@include font(14px, normal, $color_red, 1.71);
+    }
+  }
+}

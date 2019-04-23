@@ -65,3 +65,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    &__list {
+      padding-left: 233px;
+    }
+  }
+}
