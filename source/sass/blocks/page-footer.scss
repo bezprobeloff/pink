@@ -1,7 +1,6 @@
 .page-footer {
   padding: 0;
   margin: 0;
-  //border: 1px solid chocolate;
 
   &__wrapper {
     padding: 0;
@@ -46,6 +45,15 @@
     &__link-home {
       padding: 0;
       margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    &__wrapper {
+      padding-right: 130px;
+      padding-left: 130px;
     }
   }
 }

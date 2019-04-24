@@ -186,6 +186,30 @@
 
 @media (min-width: $desktop-width) {
   .photo {
+    &__wrapper {
+      padding: 0 130px;
+    }
+
+    &__item {
+      margin-bottom: 54px;
+    }
+
+    &__item--title {
+      margin-bottom: 50px;
+
+      .photo__post {
+        width: 940px;
+        //margin-bottom: 50px;
+      }
+    }
+
+    &__slogan {
+      padding: 5px 20px 65px;
+      //margin-bottom: 20px;
+      //border-bottom: 1px solid red;
+    }
+
+    /*
     &__item {
       &--title {
         .photo__post {
@@ -196,5 +220,7 @@
         }
       }
     }
+    */
+
   }
 }
