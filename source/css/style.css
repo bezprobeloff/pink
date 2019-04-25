@@ -235,7 +235,9 @@ body {
       font-weight: normal;
       line-height: 1;
       margin: 0;
-      margin-right: 80px; }
+      margin-right: 80px;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
       .site-list__item:last-child {
         margin-right: 0; } }
 
@@ -524,7 +526,6 @@ body {
   .features__list {
     padding: 0;
     padding-top: 48px;
-    margin: 0;
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
