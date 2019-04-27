@@ -2,26 +2,32 @@
 @import "variables.scss";
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
   background-color: $bg_dark_blue;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 
   &__logo {
     display: flex;
-    align-items: center;
-    padding-left: 20px;
+    padding: 0;
+    margin: 0;
     height: 66px + 3px; //+3 'это только для открытого типа
     //opacity: 0.3; это для закрытого типа
     box-shadow: 0 1px 0 0 $color_black;
+
+    &-image {
+      padding-top: 22px;
+      padding-left: 20px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: $tablet-width;
-
     &__logo {
       height: 109px;
     }
@@ -30,9 +36,11 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: $desktop-width;
-    flex-direction: row;
-    //background-color: transparent;
+    background-color: rgba($bg_dark_blue, 0.7);
+
+    &__wrapper {
+      flex-direction: row;
+      padding: 0 130px;
+    }
   }
 }
-

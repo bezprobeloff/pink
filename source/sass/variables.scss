@@ -15,3 +15,4 @@ $line-height_base: 1.71;
 $mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
+$mobile-width-only: $tablet-width - 1px;

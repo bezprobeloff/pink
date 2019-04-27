@@ -1,23 +1,11 @@
 @import "variables.scss";
 
-@mixin font($size: 18px,  $weight: bold, $color: $color_white,
-  $line-height: 1.78) {
-
-  @if ($size != $font-size_base) {
-    font-size: $size;
-  }
-
-  @if ($weight != $font-weight_base) {
-    font-weight: $weight;
-  }
-
-  @if ($line-height != $line-height_base) {
-    line-height: $line-height;
-  }
-
-  @if ($color!= $color_base) {
-    color: $color;
-  }
+@mixin font($size: $font-size_base,  $weight: $font-weight_base, $color: $color_base,
+  $line-height: $line-height_base) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
 }
 
 @mixin link_none {

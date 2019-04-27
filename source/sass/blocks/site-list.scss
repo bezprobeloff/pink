@@ -31,18 +31,32 @@
       color: inherit;
     }
   }
+
+  .main-nav--closed &__item {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 700px;
+    //width: 700px;
     flex-direction: row;
     min-height: 110px;
-    justify-content: space-between;
+    margin: 0;
+    margin-left: auto;
 
     &__item {
       min-height: 110px;
       background-color: transparent;
+      font-weight: normal;
+      line-height: 1;
+      margin: 0;
+      margin-right: 80px;
+      box-shadow: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

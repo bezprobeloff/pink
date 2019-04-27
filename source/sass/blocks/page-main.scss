@@ -1,61 +1,58 @@
 .page-main {
-  margin: 0 auto;
   display: block;
   padding: 0;
   position: relative;
-
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-
-    height: 462px;
-    width: 100%;
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-    background-size: cover;
-    background-position: center 0;
-    z-index: -1;
-  }
+  margin: 0;
+  width: 100%;
 
   &__wrapper {
-    /*
-    &--logo {
-      position: absolute;
-      top: -63px;
-      //background: url("../img/bg-back-mobile@1x.jpg") no-repeat $color_white;
+    &--title {
+      //padding: 0;
+      padding-top: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+
+      min-height: 170px;
+      display: flex;
+      flex-direction: column;
 
       &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 176px;
+        top: -67px;
         left: 0;
-        width: 320px;
-        height: 314px;
-        background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+        height: 462px;
+        width: 100%;
+        background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+        background-size: cover;
+        background-position: center 0;
+        z-index: -1;
       }
     }
-    */
 
-    &--title {
-      padding: 0;
-      padding-top: 101px;
+    &--download {
       //margin: 0;
-      //position: absolute;
-      //top: -63px;
-      min-height: 136px;
-      //background: url("../img/bg-back-mobile@1x.jpg") no-repeat $color_white;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid coral;
+      padding-top: 395px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -67px;
+        left: 0;
+
+        height: 462px;
+        width: 100%;
+        background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+        background-size: cover;
+        background-position: center 0;
+        z-index: -1;
+      }
     }
 
     &--description {
-      padding: 0;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding: 46px 20px 48px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -65,9 +62,12 @@
 
   &__title {
     padding: 0;
+    padding-bottom: 30px;
     margin: 0;
-
-    @include font(24px, 300, $color_white,  1);
+    font-size: 24px;
+    font-weight: 300;
+    color: $color_white;
+    line-height: 1.2;
     text-align: center;
   }
 
@@ -75,44 +75,38 @@
     padding: 0;
     margin: 0;
 
-    @include font(14px, 300, $color_gray,  2.14);
+    @include font(14px, 300, $color_gray,  2.2);
     text-align: center;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
-
-    &::before {
-      height: 729px;
-      background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    }
-
     &__wrapper {
-      /*
-      width: $tablet-width;
-
-      &--logo {
-        padding-top: 184px;
-        top: -111px;
-        background: url("../img/bg-back-tablet@1x.jpg") no-repeat $color_white;
-        //z-index: -2;
+      &--title {
+        //padding: 0;
+        padding-top: 69px;
+        padding-right: 20px;
+        padding-left: 20px;
+        min-height: 329px;
 
         &::before {
-          top: 184px;
+          top: -111px;
           left: 0;
-          width: $tablet-width;
-          height: 545px;
-          background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
-          //z-index: -1;
+          height: 729px;
+          background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
         }
       }
-      */
 
-      &--title {
-        top: -111px;
-        min-height: 330px;
-        //background: url("../img/bg-back-tablet@1x.jpg") no-repeat $color_white;
+      &--download {
+        padding-top: 64px;
+
+        &::before {
+          top: -111px;
+          left: 0;
+          height: 729px;
+          background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+        }
       }
 
       &--description {
@@ -122,7 +116,7 @@
     }
 
     &__title {
-      @include font(50px, 300, $color_white,  1);
+      @include font(50px, 300, $color_white,  1.2);
     }
 
     &__description {
@@ -133,16 +127,37 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    border: 1px solid yellowgreen;
-
-    &::before {
-      top: -113px;
-      height: 853px;
-      background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
-    }
-
     &__wrapper {
+      &--title {
+        padding: 63px 70px;
+        min-height: 284px;
 
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -112px;
+          left: 0;
+          height: 853px;
+          background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+        }
+      }
+
+      &--download {
+        padding-top: 97px;
+
+        &::before {
+          top: -112px;
+          left: 0;
+          height: 853px;
+          background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+        }
+      }
+
+      &--description {
+        padding: 90px 20px;
+        //padding-bottom: 80px;
+      }
     }
   }
 }

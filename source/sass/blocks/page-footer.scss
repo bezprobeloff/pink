@@ -1,22 +1,19 @@
 .page-footer {
   padding: 0;
   margin: 0;
-  //margin: 0 auto;
-  border: 1px solid chocolate;
 
   &__wrapper {
-    padding: 0;
     padding: 40px 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
   }
 
   &__link-home {
     padding: 0;
     margin: 0;
+    margin-bottom: 40px;
   }
 
   &__logo {
@@ -38,7 +35,24 @@
   .page-footer {
     &__wrapper {
       flex-direction: row;
-      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0 20px;
+      padding-top: 70px;
+      padding-bottom: 76px;
+    }
+
+    &__link-home {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    &__wrapper {
+      padding-right: 130px;
+      padding-left: 130px;
     }
   }
 }
