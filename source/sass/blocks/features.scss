@@ -254,30 +254,3 @@
     background-image: url("../img/iphone-screen-3-desktop@2x.png");
   }
 }
-/*
-@media (min-width: $tablet-width) and (min-resolution: 144dpi),
-  (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
-  .page-main__wrapper {
-    &--title::before {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
-
-    &--download::before {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
-  }
-}
-
-@media (min-width: $desktop-width) and (min-resolution: 144dpi),
-  (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
-  .page-main__wrapper {
-    &--title::before {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
-
-    &--download::before {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
-  }
-}
-*/
