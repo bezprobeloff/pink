@@ -176,7 +176,6 @@
   (min-width: $mobile-width) and (min-resolution: 1.5dppx) {
   .download__wrapper::before {
     background-image: url("../img/iphone-hand-mobile@2x.png");
-    //background-size: 50%;
   }
 }
 
@@ -184,7 +183,6 @@
   (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
   .download__wrapper::before {
     background-image: url("../img/iphone-hand-tablet@2x.png");
-    //background-size: 50%;
   }
 }
 
@@ -192,6 +190,5 @@
   (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .download__wrapper::before {
     background-image: url("../img/iphone-hand-desktop@2x.png");
-    //background-size: 50%;
   }
 }
