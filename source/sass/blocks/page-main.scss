@@ -5,6 +5,20 @@
   margin: 0;
   width: 100%;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -67px;
+    left: 0;
+    height: 462px;
+    width: 100%;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    z-index: -1;
+  }
+
   &__wrapper {
     &--title {
       padding-top: 30px;
@@ -14,39 +28,11 @@
       min-height: 170px;
       display: flex;
       flex-direction: column;
-
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -67px;
-        left: 0;
-        height: 462px;
-        width: 100%;
-        background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-        background-size: cover;
-        background-position: center 0;
-        z-index: -1;
-      }
     }
 
     &--download {
+      width: 100%;
       padding-top: 395px;
-
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -67px;
-        left: 0;
-
-        height: 462px;
-        width: 100%;
-        background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-        background-size: cover;
-        background-position: center 0;
-        z-index: -1;
-      }
     }
   }
 
@@ -64,30 +50,23 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
+    &::before {
+      top: -111px;
+      left: 0;
+      height: 729px;
+      background-image: url("../img/bg-back-tablet@1x.jpg");
+    }
+
     &__wrapper {
       &--title {
         padding-top: 69px;
         padding-right: 20px;
         padding-left: 20px;
         min-height: 329px;
-
-        &::before {
-          top: -111px;
-          left: 0;
-          height: 729px;
-          background-image: url("../img/bg-back-tablet@1x.jpg");
-        }
       }
 
       &--download {
         padding-top: 64px;
-
-        &::before {
-          top: -111px;
-          left: 0;
-          height: 729px;
-          background-image: url("../img/bg-back-tablet@1x.jpg");
-        }
       }
     }
 
@@ -99,31 +78,24 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -112px;
+      left: 0;
+      height: 853px;
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+    }
+
     &__wrapper {
       &--title {
         padding: 63px 70px;
         min-height: 284px;
-
-        &::before {
-          content: "";
-          display: block;
-          position: absolute;
-          top: -112px;
-          left: 0;
-          height: 853px;
-          background-image: url("../img/bg-back-desktop@1x.jpg");
-        }
       }
 
       &--download {
         padding-top: 97px;
-
-        &::before {
-          top: -112px;
-          left: 0;
-          height: 853px;
-          background-image: url("../img/bg-back-desktop@1x.jpg");
-        }
       }
     }
   }
@@ -131,12 +103,8 @@
 
 @media (min-width: $mobile-width) and (min-resolution: 144dpi),
   (min-width: $mobile-width) and (min-resolution: 1.5dppx) {
-  .page-main__wrapper {
-    &--title::before {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-    }
-
-    &--download::before {
+  .page-main {
+    &::before {
       background-image: url("../img/bg-back-mobile@2x.jpg");
     }
   }
@@ -144,12 +112,8 @@
 
 @media (min-width: $tablet-width) and (min-resolution: 144dpi),
   (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
-  .page-main__wrapper {
-    &--title::before {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
-
-    &--download::before {
+  .page-main {
+    &::before {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
@@ -157,12 +121,8 @@
 
 @media (min-width: $desktop-width) and (min-resolution: 144dpi),
   (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
-  .page-main__wrapper {
-    &--title::before {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
-
-    &--download::before {
+  .page-main {
+    &::before {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }

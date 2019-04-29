@@ -1,5 +1,6 @@
 .download {
   padding: 0;
+  background-color: $bg_dark_blue;
 
   &__wrapper {
     position: relative;
@@ -11,7 +12,6 @@
     padding-top: 28px;
     padding-bottom: 31px;
 
-    background-color: $bg_dark_blue;
 
     &::before {
       content: "";
