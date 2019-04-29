@@ -20,6 +20,8 @@
     box-shadow: 0 1px 0 0 $color_black;
 
     &-image {
+      width: 75px;
+      height: auto;
       padding-top: 22px;
       padding-left: 20px;
     }
@@ -30,6 +32,11 @@
   .page-header {
     &__logo {
       height: 109px;
+
+      &-image {
+        padding-top: 26px;
+        width: 147px;
+      }
     }
   }
 }
@@ -37,6 +44,10 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background-color: rgba($bg_dark_blue, 0.7);
+
+    &__logo-image {
+      padding-left: 0;
+    }
 
     &__wrapper {
       flex-direction: row;

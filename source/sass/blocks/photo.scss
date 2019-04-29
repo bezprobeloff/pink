@@ -4,6 +4,7 @@
 .photo {
   padding: 0;
   margin: 0;
+  background-color: $color_white;
 
   &__list {
     display: flex;
@@ -35,14 +36,17 @@
     padding: 0;
     margin: 0;
     display: block;
+    width: 100%;
+    height: auto;
   }
 
   &__hit {
     position: absolute;
     display: block;
     top: 0;
-    right: 20px;
-    padding: 6px 20px;
+    right: 0;
+    margin-right: 20%;
+    padding: 6px 18px;
     text-align: center;
     background-color: $color_red;
 
@@ -132,6 +136,11 @@
       }
     }
 
+    &__hit {
+      top: 55px;
+      margin-right: 3%;
+    }
+
     &__post {
       padding: 24px 27px;
       min-height: 155px;
@@ -199,6 +208,10 @@
       .photo__post {
         width: 940px;
       }
+    }
+
+    &__hit {
+      margin-right: 11%;
     }
 
     &__slogan {
