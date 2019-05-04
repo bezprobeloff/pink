@@ -31,6 +31,22 @@
         background: url("../img/icon-timer.svg") no-repeat;
         background-size: contain;
       }
+
+      &::after {
+        content: "24";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        top: 114px;
+        left: 39px;
+        width: 202px;
+        height: 202px;
+        border: 13px solid #d22856;
+        border-radius: 50%;
+
+        @include font(96px, bold, $color_red, 1.71);
+        text-align: center;
+      }
     }
 
     &__title {
@@ -76,6 +92,16 @@
         left: 130px;
         width: 298px;
         height: 345px;
+      }
+
+      &::after {
+        top: 93px;
+        left: 152px;
+        width: 253px;
+        height: 253px;
+        border: 13px solid #d22856;
+
+        font-size: 120px;
       }
     }
 
