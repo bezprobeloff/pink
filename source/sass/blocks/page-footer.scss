@@ -10,17 +10,20 @@
     align-items: center;
   }
 
-  &__link-home {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-
   &__logo {
     padding: 0;
     margin: 0;
-    display: block;
+    margin-bottom: 40px;
     border: none;
+
+    &-image {
+      display: block;
+      fill: $color_gray;
+
+      &:hover {
+        fill: $color_red;
+      }
+    }
   }
 }
 
@@ -41,7 +44,7 @@
       padding-bottom: 76px;
     }
 
-    &__link-home {
+    &__logo {
       padding: 0;
       margin: 0;
     }
