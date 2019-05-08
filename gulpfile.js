@@ -54,61 +54,61 @@ gulp.task("refresh", function (done) {
 });
 
 gulp.task("images", function () {
-return gulp.src("source/img/**/*.{png,jpg,svg}")
-.pipe(imagemin([
-imagemin.optipng({optimizationLevel: 3}),
-imagemin.jpegtran({progressive: true}),
-imagemin.svgo()
-]))
-.pipe(gulp.dest("source/img2"));
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img2"));
 });
 
 
 gulp.task("webp", function () {
-return gulp.src("source/img/**/*.{png,jpg}")
-.pipe(webp({quality: 90}))
-.pipe(gulp.dest("source/img3"));
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img3"));
 });
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
-  .pipe(svgstore({
-    inlineSvg: true
-    }))
+    .pipe(svgstore({
+      inlineSvg: true
+      }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img4"));
 });
 
 gulp.task("html", function () {
-return gulp.src("source/*.html")
-.pipe(posthtml([
-include()
-]))
-.pipe(htmlmin({ collapseWhitespace: true }))
-.pipe(gulp.dest("build"));
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+    include()
+    ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
 });
 
 
 gulp.task("copy", function () {
   return gulp.src([
-  "source/fonts/**/*.{woff,woff2}",
-  "source/img/**",
-  //"source/js/**",
-  "source/*.ico"
-  ], {
-  base: "source"
-  })
-  .pipe(gulp.dest("build"));
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    //"source/js/**",
+    "source/*.ico"
+    ], {
+    base: "source"
+    })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("jsmin", function () {
   return gulp.src("source/js/*.js")
-  .pipe(jsmin())
-  .pipe(gulp.dest("build/js"));
-  });
+    .pipe(jsmin())
+    .pipe(gulp.dest("build/js"));
+});
 
 gulp.task("clean", function () {
-return del("build");
+  return del("build");
 });
 
 gulp.task("build", gulp.series("clean", "copy", "jsmin", "css", "sprite", "html"));
