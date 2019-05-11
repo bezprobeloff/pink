@@ -71,10 +71,6 @@ body {
   }
 }
 
-.group_svg {
-  display: none;
-}
-
 .wrapper {
   width: 320px;
   margin: 0 auto;
@@ -150,6 +146,57 @@ body {
   text-align: center;
 }
 
+.slider {
+  &__toggles {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 34px;
+  }
+
+  &__toggle {
+    padding: 0;
+    margin-right: 13px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 12px;
+    height: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+
+      width: 6px;
+      height: 6px;
+      opacity: 0.3;
+      border: solid 3px transparent;
+      border-radius: 50%;
+      left: 3px;
+      background-color: $color_gray;
+    }
+
+    &--active {
+      &::before {
+        left: 0;
+        width: 12px;
+        height: 12px;
+        border: solid 3px $color_gray;
+        background-color: $color_white;
+        opacity: 1;
+      }
+    }
+  }
+}
+
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -162,3 +209,4 @@ body {
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/article-news.scss";
+@import "blocks/reviews.scss";
