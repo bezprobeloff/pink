@@ -128,9 +128,11 @@ body {
   @include visually-hidden;
 }
 
+/*
 .price {
   border: 1px solid red;
 }
+*/
 
 .button {
   margin: 0;
@@ -152,7 +154,7 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-    margin-top: 34px;
+    //margin-top: 34px;
   }
 
   &__toggle {
@@ -164,6 +166,7 @@ body {
     outline: none;
     width: 12px;
     height: 12px;
+    cursor: pointer;
 
     &:last-child {
       margin-right: 0;
@@ -210,3 +213,4 @@ body {
 @import "blocks/copyright.scss";
 @import "blocks/article-news.scss";
 @import "blocks/reviews.scss";
+@import "blocks/price.scss";

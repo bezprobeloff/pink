@@ -1,0 +1,173 @@
+.price {
+  padding: 0;
+  margin: 0;
+
+  &__wrapper {
+    width: 100%;
+    padding-top: 93px;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  thead {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: $color_gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  tbody {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //position: relative;
+    //border-bottom: solid 2px $color_line_table;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: $mobile-width - 40px;
+    display: flex;
+    box-sizing: border-box;
+    border-right: solid 2px $color_line_table;
+    border-left: solid 2px $color_line_table;
+    //border-bottom: solid 2px $color_line_table;
+    border-collapse: collapse;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 660px;
+      height: auto;
+      //height: 2px;
+      //background-color: $color_line_table;
+      //border-top: solid 2px red;
+      border-bottom: solid 2px $color_line_table;
+      left: -170px;
+      bottom: 0;
+    }
+
+    &--title {
+      justify-content: center;
+      border-top: none;
+      border-bottom: none;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__cell-title {
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 22px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &:first-child {
+      display: none;
+    }
+  }
+
+  &__title-text {
+    padding: 0;
+    margin: 0;
+
+    @include upper;
+    @include font(18px, bold, $color_white, 1.67);
+  }
+
+  &__cost {
+    padding: 0;
+    margin: 0;
+
+    @include font(24px, 300, $color_white, 1.25);
+  }
+
+  &__cell-function {
+    padding: 0;
+    padding-top: 15px;
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-bottom: 17px;
+    margin: 0;
+
+    @include font(14px, normal, $color_gray, 2.14);
+    @include upper;
+  }
+
+  &__cell-free {
+    //display: block;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 16px;
+    align-self: center;
+    width: 31px;
+    height: 31px;
+    font-size: 0;
+    //position: relative;
+
+    &--true {
+      &::before {
+        display: block;
+        content: "";
+        position: relative;
+        top: 2px;
+        right: 0;
+        width: 25px;
+        height: 14px;
+        border-left: 4px solid $color_green;
+        border-bottom: 4px solid $color_green;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &--false {
+      &::before,
+      &::after {
+        position: relative;
+        content: "";
+        display: block;
+        left: 13px;
+        height: 35px;
+        width: 4px;
+        background-color: $color_orange;
+      }
+
+      &::before {
+        top: -5px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: -39px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__toggles {
+    padding-top: 40px;
+    padding-bottom: 47px;
+    background-color: $bg_gray;
+  }
+}
