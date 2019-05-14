@@ -32,40 +32,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    //position: relative;
-    //border-bottom: solid 2px $color_line_table;
   }
 
   &__item {
     position: relative;
     padding: 0;
     margin: 0;
-    width: $mobile-width - 40px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     box-sizing: border-box;
-    border-right: solid 2px $color_line_table;
-    border-left: solid 2px $color_line_table;
-    //border-bottom: solid 2px $color_line_table;
+    border-bottom: solid 2px $color_line_table;
     border-collapse: collapse;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 660px;
-      //height: auto;
-      border-bottom: solid 2px $color_line_table;
-      left: -170px;
-      bottom: 0;
-    }
-
     &--title {
-      justify-content: center;
       border-top: none;
       border-bottom: none;
-
-      &::after {
-        display: none;
-      }
     }
   }
 
@@ -77,7 +59,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 280px;
+    box-sizing: border-box;
+    border-left: solid 2px $color_line_table;
+    border-right: solid 2px $color_line_table;
 
     &:first-child {
       display: none;
@@ -100,37 +85,39 @@
   }
 
   &__cell-function {
+    width: 231px;
     padding: 0;
     padding-top: 15px;
     padding-right: 21px;
     padding-left: 21px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     margin: 0;
+    box-sizing: border-box;
 
     @include font(14px, normal, $color_gray, 2.14);
     @include upper;
+    border-left: solid 2px $color_line_table;
   }
 
   &__cell-free {
-    //display: block;
+    position: relative;
     padding: 0;
     margin: 0;
-    margin-left: auto;
-    margin-right: 16px;
-    align-self: center;
+    padding-right: 16px;
     width: 31px;
-    height: 31px;
+    height: inherit;
     font-size: 0;
-    //position: relative;
+    border-right: solid 2px $color_line_table;
 
     &--true {
       &::before {
         display: block;
         content: "";
-        position: relative;
-        top: 2px;
-        right: 0;
+        position: absolute;
+        top: -7px;
+        left: 0;
         width: 25px;
+        margin-top: 50%;
         height: 14px;
         border-left: 4px solid $color_green;
         border-bottom: 4px solid $color_green;
@@ -141,22 +128,22 @@
     &--false {
       &::before,
       &::after {
-        position: relative;
+        position: absolute;
         content: "";
         display: block;
+        top: -14px;
         left: 13px;
         height: 35px;
         width: 4px;
+        margin-top: 50%;
         background-color: $color_orange;
       }
 
       &::before {
-        top: -5px;
         transform: rotate(45deg);
       }
 
       &::after {
-        top: -39px;
         transform: rotate(-45deg);
       }
     }

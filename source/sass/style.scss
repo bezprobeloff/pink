@@ -124,16 +124,6 @@ body {
   }
 }
 
-.visually-hidden {
-  @include visually-hidden;
-}
-
-/*
-.price {
-  border: 1px solid red;
-}
-*/
-
 .button {
   margin: 0;
   padding: 0;
@@ -216,3 +206,11 @@ body {
 @import "blocks/price.scss";
 @import "blocks/contact.scss";
 @import "blocks/map-address.scss";
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden {
+  display: none;
+}

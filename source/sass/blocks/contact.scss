@@ -12,7 +12,7 @@
     padding-left: 20px;
     //margin: 0;
     box-sizing: border-box;
-/*
+    /*
     &::after {
       content: "";
       display: block;
@@ -23,7 +23,7 @@
       border-top: 35px solid $color_white;
       z-index: 3;
     }
-*/
+    */
   }
 
   &__title {
@@ -68,6 +68,4 @@
       text-align: center;
     }
   }
-
-
 }
