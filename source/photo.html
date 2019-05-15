@@ -246,8 +246,42 @@
             Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
-      <section class="new_post">
-          <h2 class="visually-hidden">Создать новый пост</h2>
+      <section class="new-post">
+        <h2 class="visually-hidden">Создать новый пост</h2>
+        <div class="wrapper new-post__wrapper">
+          <form class="new-post__form" action="">
+            <div class="new-post__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img src="img/photo-road-mobile@1x.jpg" class="new-post__image-select" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Дорога" width="280" height="374">
+              </picture>
+            </div>
+            <div class="new-post__list">
+              <label class="new-post__item new-post__item--crop" for="new-post__item--crop"></label>
+              <label class="new-post__item new-post__item--fill" for="new-post__item--fill"></label>
+              <label class="new-post__item new-post__item--contrast" for="new-post__item--contrast"></label>
+              <button id="new-post__item--crop" type="button"></button>
+              <button id="new-post__item--fill" type="button"></button>
+              <button id="new-post__item--contrast" type="button"></button>
+            </div>
+            <div class="new-post__range">
+              <div class="new-post__range-scale">
+                <div class="range-toggle new-post__range-toggle"></div>
+              </div>
+              <label class="hidden" for="range-filter"></label>
+              <input class="hidden" type="range" name="range-filter" id="range-filter" min="1" max="10" step="1">
+            </div>
+            <div class="new-post__button">
+              <button class="button new-post__button-submit">Запостить</button>
+              <button class="button new-post__button-cansel">Отмена</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

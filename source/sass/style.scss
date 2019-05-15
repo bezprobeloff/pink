@@ -190,6 +190,16 @@ body {
   }
 }
 
+.range-toggle {
+  padding: 0;
+  margin: 0;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 2px solid $color_red;
+  border-radius: 50%;
+}
+
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -206,6 +216,7 @@ body {
 @import "blocks/price.scss";
 @import "blocks/contact.scss";
 @import "blocks/map-address.scss";
+@import "blocks/new-post.scss";
 
 .visually-hidden {
   @include visually-hidden;
