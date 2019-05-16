@@ -25,21 +25,76 @@
               <use xlink:href="#logo-pink-header"></use>
             </svg>
         </a>
-          <nav class="main-nav main-nav--opened main-nav--nojs">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a href="index.html">Главная</a></li>
-              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-              <li class="site-list__item"><a href="#">Конкурс</a></li>
-              <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="#">Конкурс</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
     <main class="page-main">
       <div class="wrapper page-main__wrapper page-main__wrapper--title">
         <h2 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
+      <section class="story">
+        <h2 class="visually-hidden">Поделитесь историей!</h2>
+        <div class="wrapper story__wrapper">
+          <form action="" class="story__form">
+            <p class="story__title">Поделитесь своей историей и получите шанс выиграть
+              ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <div class="story__user">
+              <p class="story__user-item">
+                <label for="user-surname">Фамилия:</label>
+                <input id="user-surname" type="text" placeholder="Укажите фамилию *" required>
+              </p>
+              <p class="story__user-item">
+                <label for="user-name">Имя:</label>
+                <input id="user-name" type="text" placeholder="Введите ваше имя *" required>
+              </p>
+              <p class="story__user-item">
+                <label for="user-middle-name">Отчество:</label>
+                <input id="user-middle-name" type="text" placeholder="Ну и отчество тоже">
+              </p>
+            </div>
+            <div class="story__achieve">
+              <fieldset>
+              <legend class="story__achieve-title">Ваши безбашенные достижения в путешествии</legend>
+              <p class="story__achieve-checkbox">
+                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve1">
+                <label for="achieve1">Сделал селфи с акулой</label>
+                </p>
+              <p class="story__achieve-checkbox">
+                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve2">
+                <label for="achieve2">Обгорел на пляже</label>
+              </p>
+              <p class="story__achieve-checkbox">
+                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve3">
+                <label for="achieve3">Видел Чака Норриса</label>
+              </p>
+              <p class="story__achieve-checkbox">
+                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve4">
+                <label for="achieve4">Накупил сувениров</label>
+              </p>
+              <p class="story__achieve-checkbox">
+                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve5">
+                <label for="achieve5">Удержал башню</label>
+              </p>
+              <p class="story__achieve-checkbox">
+                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve6">
+                <label for="achieve6">Разгромил отель</label>
+              </p>
+              </fieldset>
+            </div>
+            <div class="story__contact">
+
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="wrapper page-footer__wrapper">
