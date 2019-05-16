@@ -90,7 +90,44 @@
               </fieldset>
             </div>
             <div class="story__contact">
-
+              <fieldset>
+                <legend class="story__contact-title">Контактная информация</legend>
+                <p class="story__contact-item">
+                  <label for="contact-call">Номер телефона</label>
+                  <input id="contact-call" type="text" placeholder="Номер, пожалуйста">
+                </p>
+                <p class="story__contact-item">
+                  <label for="contact-email">адрес почты</label>
+                  <input id="contact-email" type="email" placeholder="Введите почту *" required>
+                </p>
+              </fieldset>
+            </div>
+            <div class="story__OS">
+              <fieldset>
+              <legend class="story__OS-title">С каким приложением путешествовали?</legend>
+              <p class="story__OS-radio">
+                <input class="visually-hidden" type="radio" name="radio-OS" id="radio-iOS">
+                <label for="radio-iOS">Pink для iOS</label>
+              </p>
+              <p class="story__OS-radio">
+                <input class="visually-hidden" type="radio" name="radio-OS" id="radio-Android">
+                <label for="radio-Android">Pink на Android</label>
+              </p>
+              <p class="story__OS-radio">
+                <input class="visually-hidden" type="radio" name="radio-OS" id="radio-WPhone">
+                <label for="radio-WPhone">Windows Phone</label>
+              </p>
+              </fieldset>
+            </div>
+            <div class="story__text">
+              <fieldset>
+                <legend class="story__text-title">Опишите свои эмоции</legend>
+                <textarea name="story-textarea" id="story-textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
+            <div class="story__send">
+              <input class="story__send-button" type="submit" value="Отправить форму">
+              <p class="story__send-notes"><span>*</span> — обязательные поля</p>
             </div>
           </form>
         </div>

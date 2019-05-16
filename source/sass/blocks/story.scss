@@ -6,6 +6,7 @@
 
   &__wrapper {
     padding: 46px 20px;
+    padding-bottom: 16px;
   }
 
   &__title {
@@ -23,6 +24,13 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+
+    &-item {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
     label {
       padding: 0;
@@ -113,6 +121,202 @@
         background-size: 22px 16px;
         background-repeat: no-repeat;
         background-position: 7px 9px;
+      }
+    }
+  }
+
+  &__contact {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    fieldset {
+      padding: 0;
+      padding-top: 31px;
+      padding-bottom: 25px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      border: none;
+    }
+
+    legend {
+      display: none;
+    }
+
+    &-item {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      padding: 0;
+      padding-left: 22px;
+      margin: 0;
+      margin-bottom: 6px;
+
+      @include font(14px, normal, $color_red,  2.14);
+      @include upper;
+    }
+
+    input {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 17px;
+      box-sizing: border-box;
+      height: 63px;
+      border: solid 2px $color_line_table;
+
+      &::placeholder {
+        padding: 0;
+        padding-left: 20px;
+        margin: 0;
+
+        @include font(18px, normal, $color_gray,  1.67);
+      }
+    }
+  }
+
+  &__OS {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg_gray;
+
+    fieldset {
+      padding: 0;
+      padding-bottom: 6px;
+      margin: 0;
+      border: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-title {
+      padding: 0 14px;
+      padding-top: 38px;
+      padding-bottom: 35px;
+      margin: 0;
+
+      @include font(14px, normal, $color_red,  1.29);
+      @include upper;
+      text-align: center;
+    }
+
+    &-radio {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 36px;
+
+      label {
+        position: relative;
+        display: flex;
+        padding: 0;
+        padding-left: 69px;
+        margin: 0;
+
+        @include font(18px, normal, $color_gray,  2.2);
+        text-align: center;
+      }
+
+
+      input + label::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 35px;
+        height: 35px;
+        background-color: $color_white;
+        border: 2px solid $color_line_table;
+        border-radius: 50%;
+      }
+
+      input:checked + label::after {
+        content: "";
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        width: 15px;
+        height: 15px;
+        background-color: $color_red;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    fieldset {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      border: none;
+    }
+
+    &-title {
+      padding: 0 14px;
+      padding-top: 38px;
+      padding-bottom: 16px;
+      margin: 0;
+
+      @include font(14px, normal, $color_red,  1.29);
+      @include upper;
+      text-align: center;
+    }
+
+    textarea {
+      padding: 0;
+      padding-top: 15px;
+      margin: 0;
+
+      height: 182px;
+
+      @include font(18px, normal, $color_gray,  1.67);
+      text-align: center;
+
+      border: 2px solid $color_line_table;
+    }
+  }
+
+  &__send {
+    padding: 0;
+    padding-top: 48px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    &-button {
+      padding: 16px 0;
+      margin: 0;
+
+      @include font(18px, bold, $color_white,  1.67);
+      @include upper;
+      text-align: center;
+      border: none;
+    }
+
+    &-notes {
+      padding: 0;
+      padding-top: 36px;
+      margin: 0;
+
+      @include font(14px, normal, $color_gray,  2.14);
+      @include upper;
+      text-align: center;
+
+      span {
+        color: $color_red;
       }
     }
   }
