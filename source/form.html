@@ -43,86 +43,86 @@
       <section class="story">
         <h2 class="visually-hidden">Поделитесь историей!</h2>
         <div class="wrapper story__wrapper">
-          <form action="" class="story__form">
+          <form action="" class="story__form form">
             <p class="story__title">Поделитесь своей историей и получите шанс выиграть
               ценный приз — 1000 миль на вашу бонусную карту!</p>
             <div class="story__user">
               <p class="story__user-item">
-                <label for="user-surname">Фамилия:</label>
-                <input id="user-surname" type="text" placeholder="Укажите фамилию *" required>
+                <label class="form__label-text" for="user-surname">Фамилия:</label>
+                <input class="form__input" id="user-surname" type="text" placeholder="Укажите фамилию *" required>
               </p>
               <p class="story__user-item">
-                <label for="user-name">Имя:</label>
-                <input id="user-name" type="text" placeholder="Введите ваше имя *" required>
+                <label class="form__label-text" for="user-name">Имя:</label>
+                <input class="form__input" id="user-name" type="text" placeholder="Введите ваше имя *" required>
               </p>
               <p class="story__user-item">
-                <label for="user-middle-name">Отчество:</label>
-                <input id="user-middle-name" type="text" placeholder="Ну и отчество тоже">
+                <label  class="form__label-text" for="user-middle-name">Отчество:</label>
+                <input class="form__input" id="user-middle-name" type="text" placeholder="Ну и отчество тоже">
               </p>
             </div>
             <div class="story__achieve">
-              <fieldset>
-              <legend class="story__achieve-title">Ваши безбашенные достижения в путешествии</legend>
+              <fieldset class="form__fieldset">
+              <legend class="form__legend story__achieve-title">Ваши безбашенные достижения в путешествии</legend>
               <p class="story__achieve-checkbox">
                 <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve1">
-                <label for="achieve1">Сделал селфи с акулой</label>
+                <label class="form__label-value" for="achieve1">Сделал селфи с акулой</label>
                 </p>
               <p class="story__achieve-checkbox">
                 <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve2">
-                <label for="achieve2">Обгорел на пляже</label>
+                <label class="form__label-value" for="achieve2">Обгорел на пляже</label>
               </p>
               <p class="story__achieve-checkbox">
                 <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve3">
-                <label for="achieve3">Видел Чака Норриса</label>
+                <label class="form__label-value" for="achieve3">Видел Чака Норриса</label>
               </p>
               <p class="story__achieve-checkbox">
                 <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve4">
-                <label for="achieve4">Накупил сувениров</label>
+                <label class="form__label-value" for="achieve4">Накупил сувениров</label>
               </p>
               <p class="story__achieve-checkbox">
                 <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve5">
-                <label for="achieve5">Удержал башню</label>
+                <label class="form__label-value" for="achieve5">Удержал башню</label>
               </p>
               <p class="story__achieve-checkbox">
                 <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve6">
-                <label for="achieve6">Разгромил отель</label>
+                <label class="form__label-value" for="achieve6">Разгромил отель</label>
               </p>
               </fieldset>
             </div>
             <div class="story__contact">
-              <fieldset>
-                <legend class="story__contact-title">Контактная информация</legend>
+              <fieldset class="form__fieldset">
+                <legend class="form__legend story__contact-title">Контактная информация</legend>
                 <p class="story__contact-item">
-                  <label for="contact-call">Номер телефона</label>
-                  <input id="contact-call" type="text" placeholder="Номер, пожалуйста">
+                  <label class="form__label-text" for="contact-call">Номер телефона</label>
+                  <input class="form__input" id="contact-call" type="text" placeholder="Номер, пожалуйста">
                 </p>
                 <p class="story__contact-item">
-                  <label for="contact-email">адрес почты</label>
-                  <input id="contact-email" type="email" placeholder="Введите почту *" required>
+                  <label class="form__label-text" for="contact-email">адрес почты</label>
+                  <input class="form__input" id="contact-email" type="email" placeholder="Введите почту *" required>
                 </p>
               </fieldset>
             </div>
             <div class="story__OS">
-              <fieldset>
-              <legend class="story__OS-title">С каким приложением путешествовали?</legend>
+              <fieldset class="form__fieldset">
+              <legend class="form__legend story__OS-title">С каким приложением путешествовали?</legend>
               <p class="story__OS-radio">
                 <input class="visually-hidden" type="radio" name="radio-OS" id="radio-iOS">
-                <label for="radio-iOS">Pink для iOS</label>
+                <label class="form__label-value" for="radio-iOS">Pink для iOS</label>
               </p>
               <p class="story__OS-radio">
                 <input class="visually-hidden" type="radio" name="radio-OS" id="radio-Android">
-                <label for="radio-Android">Pink на Android</label>
+                <label class="form__label-value" for="radio-Android">Pink на Android</label>
               </p>
               <p class="story__OS-radio">
                 <input class="visually-hidden" type="radio" name="radio-OS" id="radio-WPhone">
-                <label for="radio-WPhone">Windows Phone</label>
+                <label class="form__label-value" for="radio-WPhone">Windows Phone</label>
               </p>
               </fieldset>
             </div>
             <div class="story__text">
-              <fieldset>
-                <legend class="story__text-title">Опишите свои эмоции</legend>
-                <textarea name="story-textarea" id="story-textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <fieldset class="form__fieldset">
+                <legend class="form__legend story__text-title">Опишите свои эмоции</legend>
+                <textarea class="form__input" name="story-textarea" id="story-textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </fieldset>
             </div>
             <div class="story__send">
