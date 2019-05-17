@@ -5,23 +5,29 @@
   background-color: $color_white;
 
   &__wrapper {
-    padding: 46px 20px;
+    width: 100%;
+    padding-top: 46px;
     padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
   }
 
   &__title {
     padding: 0;
-    margin: 0;
+    width: $mobile-width - 40px;
+    margin: 0 auto;
 
     @include font(14px, normal, $color_gray,  2.14);
     text-align: center;
   }
 
   &__user {
+    width: $mobile-width - 40px;
     padding: 0;
     padding-top: 36px;
     padding-bottom: 25px;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 
@@ -61,6 +67,7 @@
   }
 
   &__achieve {
+    width: 100%;
     padding: 0;
     padding-top: 38px;
     margin: 0;
@@ -72,7 +79,9 @@
       display: flex;
       flex-direction: column;
       padding: 0;
-      margin: 0;
+      width: $mobile-width - 40px;
+      margin: 0 auto;
+
       outline: none;
       border: 0;
     }
@@ -127,7 +136,9 @@
 
   &__contact {
     padding: 0;
-    margin: 0;
+    width: $mobile-width - 40px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
 
@@ -190,7 +201,9 @@
     fieldset {
       padding: 0;
       padding-bottom: 6px;
-      margin: 0;
+      width: $mobile-width - 40px;
+      margin: 0 auto;
+
       border: none;
       display: flex;
       flex-direction: column;
@@ -252,7 +265,9 @@
 
   &__text {
     padding: 0;
-    margin: 0;
+    width: $mobile-width - 40px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
 
@@ -292,7 +307,9 @@
   &__send {
     padding: 0;
     padding-top: 48px;
-    margin: 0;
+    width: $mobile-width - 40px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
 
