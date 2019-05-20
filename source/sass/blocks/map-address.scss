@@ -52,3 +52,22 @@
     height: 375px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map-address {
+    margin-bottom: 36px;
+
+    &::before {
+      height: 98px;
+      background-size: 100% 98px;
+    }
+  }
+
+  iframe {
+    height: 498px;
+  }
+
+  &__image {
+    height: 498px;
+  }
+}

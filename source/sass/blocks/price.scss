@@ -285,3 +285,49 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .price {
+    &__wrapper {
+      padding-top: 148px;
+      padding-bottom: 95px;
+    }
+
+    &__cell-title,
+    &__cell-function,
+    &__cell-free {
+      width: 235px;
+    }
+
+    &__title-text {
+      font-size: 18px;
+      padding-top: 2px;
+    }
+
+    &__cost {
+      font-size: 24px;
+      line-height: 1.25;
+      padding-bottom: 13px;
+    }
+
+    &__cell-function {
+      font-size: 18px;
+      line-height: 1.67;
+      padding: 12px 21px 15px;
+    }
+
+    &__cell-free {
+      &--true {
+        &::before {
+          top: 18px;
+        }
+      }
+
+      &--false {
+        &::before {
+          top: 14px;
+        }
+      }
+    }
+  }
+}
