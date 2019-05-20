@@ -35,3 +35,20 @@
     object-fit: cover;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .map-address {
+    &::before {
+      height: 70px;
+      background-size: 100% 70px;
+    }
+  }
+
+  iframe {
+    height: 375px;
+  }
+
+  &__image {
+    height: 375px;
+  }
+}

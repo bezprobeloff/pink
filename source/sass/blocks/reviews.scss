@@ -10,10 +10,13 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
   }
 
   &__item {
     padding: 0;
+    padding-top: 19px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -21,7 +24,15 @@
   }
 
   &__author-name {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 14px;
+
     @include font(18px, bold, $color_black, 1.67);
+  }
+
+  &__author-about {
+    display: none;
   }
 
   &__text {
@@ -33,6 +44,39 @@
   }
 
   &__toggles {
-    margin-top: 34px;
+    margin-top: 37px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    &__wrapper {
+      padding-bottom: 70px;
+    }
+
+    &__item {
+      padding-top: 21px;
+    }
+
+    &__author-name {
+      padding-top: 33px;
+      margin: 0;
+      font-size: 20px;
+    }
+
+    &__author-about {
+      padding: 0;
+      margin: 0;
+      display: block;
+
+      @include font(14px, normal, $color_gray, 2.14);
+      text-align: center;
+    }
+
+    &__text {
+      order: -1;
+
+      @include font(18px, normal, $color_gray, 1.67);
+    }
   }
 }

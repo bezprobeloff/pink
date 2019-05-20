@@ -3,7 +3,6 @@
   margin: 0;
 
   &__wrapper {
-    width: 100%;
     padding-top: 93px;
   }
 
@@ -15,16 +14,7 @@
     flex-direction: column;
   }
 
-  thead {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background-color: $color_gray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+  thead,
   tbody {
     padding: 0;
     margin: 0;
@@ -42,13 +32,6 @@
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    border-bottom: solid 2px $color_line_table;
-    border-collapse: collapse;
-
-    &--title {
-      border-top: none;
-      border-bottom: none;
-    }
   }
 
   &__cell-title {
@@ -61,12 +44,7 @@
     align-items: center;
     width: 280px;
     box-sizing: border-box;
-    border-left: solid 2px $color_line_table;
-    border-right: solid 2px $color_line_table;
-
-    &:first-child {
-      display: none;
-    }
+    background-color: $color_gray;
   }
 
   &__title-text {
@@ -85,7 +63,6 @@
   }
 
   &__cell-function {
-    width: 231px;
     padding: 0;
     padding-top: 15px;
     padding-right: 21px;
@@ -96,55 +73,49 @@
 
     @include font(14px, normal, $color_gray, 2.14);
     @include upper;
-    border-left: solid 2px $color_line_table;
   }
 
   &__cell-free {
     position: relative;
     padding: 0;
     margin: 0;
-    padding-right: 16px;
-    width: 31px;
-    height: inherit;
+    //padding-right: 16px;
+   // width: 31px;
+    box-sizing: border-box;
+    //height: inherit;
+    //min-height: 120px;
     font-size: 0;
-    border-right: solid 2px $color_line_table;
+    //border-right: solid 2px $color_line_table;
 
     &--true {
       &::before {
-        display: block;
         content: "";
         position: absolute;
-        top: -7px;
-        left: 0;
-        width: 25px;
-        margin-top: 50%;
-        height: 14px;
-        border-left: 4px solid $color_green;
-        border-bottom: 4px solid $color_green;
-        transform: rotate(-45deg);
+        background-image: url("../img/icon-yes.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        top: 10px;
+        left: -14px;
+        margin-left: 50%;
+        width: 31px;
+        height: 22px;
       }
     }
 
     &--false {
-      &::before,
-      &::after {
-        position: absolute;
-        content: "";
-        display: block;
-        top: -14px;
-        left: 13px;
-        height: 35px;
-        width: 4px;
-        margin-top: 50%;
-        background-color: $color_orange;
-      }
-
       &::before {
-        transform: rotate(45deg);
-      }
+        content: "";
+        position: absolute;
+        background-image: url("../img/icon-no.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
-      &::after {
-        transform: rotate(-45deg);
+        top: 7px;
+        left: -14px;
+        margin-left: 50%;
+        width: 27px;
+        height: 26px;
       }
     }
   }
@@ -153,5 +124,164 @@
     padding-top: 40px;
     padding-bottom: 47px;
     background-color: $bg_gray;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .price {
+    &__wrapper {
+      width: 100%;
+    }
+
+    thead {
+      background-color: $color_gray;
+    }
+
+    &__item {
+      border-bottom: solid 2px $color_line_table;
+      border-collapse: collapse;
+
+      &--title {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+
+    &__cell-title {
+      border-left: solid 2px $color_line_table;
+      border-right: solid 2px $color_line_table;
+
+      &:first-child {
+        display: none;
+      }
+    }
+
+    &__cell-function {
+      width: 231px;
+      border-left: solid 2px $color_line_table;
+    }
+
+    &__cell-free {
+      //padding-right: 16px;
+      //width: 31px;
+      width: 49px;
+      border-right: solid 2px $color_line_table;
+      /*
+
+      &--true {
+        &::before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: -7px;
+          left: 0;
+          width: 25px;
+          margin-top: 50%;
+          height: 14px;
+          border-left: 4px solid $color_green;
+          border-bottom: 4px solid $color_green;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &--false {
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          top: -14px;
+          left: 13px;
+          height: 35px;
+          width: 4px;
+          margin-top: 50%;
+          background-color: $color_orange;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+      */
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    background-color: $bg_gray;
+
+    &__wrapper {
+      padding: 38px 22px 68px;
+    }
+
+
+    &__cell-title {
+      width: 153px;
+      padding-top: 12px;
+      padding-bottom: 9px;
+
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      //border-top: none;
+      //border-left: none;
+      border-right: 2px solid $color_line_table;
+      border-bottom: none;
+
+      &:first-child {
+        background-color: transparent;
+        border: none;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &__title-text {
+      font-size: 16px;
+    }
+
+    &__cost {
+      font-size: 18px;
+      line-height: 1.67;
+    }
+
+    &__cell-function {
+      //width: 100%;
+      width: 153px;
+      padding: 6px 12px 8px;
+      border-top: 2px solid transparent;
+      //border-top: none;
+      border-right: 2px solid $color_line_table;
+      border-left: 2px solid $color_line_table;
+      border-bottom: 2px solid $color_line_table;
+      text-transform: none;
+
+      .price__item:first-child & {
+        border-top: 2px solid $color_line_table;
+      }
+    }
+
+    &__cell-free {
+      //width: 100%;
+      width: 153px;
+
+      border-top: 2px solid transparent;
+      //border-top: none;
+      border-right: 2px solid $color_line_table;
+      border-left: 2px solid transparent;
+      //border-left: none;
+      border-bottom: 2px solid $color_line_table;
+    }
+
+
+    &__toggles {
+      display: none;
+    }
   }
 }
