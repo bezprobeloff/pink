@@ -45,7 +45,7 @@
         <div class="wrapper story__wrapper">
           <form action="" class="story__form form">
             <p class="story__title">Поделитесь своей историей и получите шанс выиграть
-              ценный приз — 1000 миль на вашу бонусную карту!</p>
+              ценный приз — 1000 миль на вашу бонусную карту! <span><br>Пожалуйста, заполните форму ниже:</span></p>
             <div class="story__user">
               <p class="story__user-item">
                 <label class="form__label-text" for="user-surname">Фамилия:</label>
@@ -63,35 +63,39 @@
             <div class="story__achieve">
               <fieldset class="form__fieldset">
               <legend class="form__legend story__achieve-title">Ваши безбашенные достижения в путешествии</legend>
-              <p class="story__achieve-checkbox">
-                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve1">
-                <label class="form__label-value" for="achieve1">Сделал селфи с акулой</label>
+              <div>
+                <p class="story__achieve-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve1">
+                  <label class="form__label-value" for="achieve1">Сделал селфи с акулой</label>
+                  </p>
+                <p class="story__achieve-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve2">
+                  <label class="form__label-value" for="achieve2">Обгорел на пляже</label>
                 </p>
-              <p class="story__achieve-checkbox">
-                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve2">
-                <label class="form__label-value" for="achieve2">Обгорел на пляже</label>
-              </p>
-              <p class="story__achieve-checkbox">
-                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve3">
-                <label class="form__label-value" for="achieve3">Видел Чака Норриса</label>
-              </p>
-              <p class="story__achieve-checkbox">
-                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve4">
-                <label class="form__label-value" for="achieve4">Накупил сувениров</label>
-              </p>
-              <p class="story__achieve-checkbox">
-                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve5">
-                <label class="form__label-value" for="achieve5">Удержал башню</label>
-              </p>
-              <p class="story__achieve-checkbox">
-                <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve6">
-                <label class="form__label-value" for="achieve6">Разгромил отель</label>
-              </p>
+                <p class="story__achieve-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve3">
+                  <label class="form__label-value" for="achieve3">Видел Чака Норриса</label>
+                </p>
+                <p class="story__achieve-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve4">
+                  <label class="form__label-value" for="achieve4">Накупил сувениров</label>
+                </p>
+                <p class="story__achieve-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve5">
+                  <label class="form__label-value" for="achieve5">Удержал башню</label>
+                </p>
+                <p class="story__achieve-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="achieve-checkbox" id="achieve6">
+                  <label class="form__label-value" for="achieve6">Разгромил отель</label>
+                </p>
+              </div>
               </fieldset>
             </div>
             <div class="story__contact">
               <fieldset class="form__fieldset">
+
                 <legend class="form__legend story__contact-title">Контактная информация</legend>
+                <div>
                 <p class="story__contact-item">
                   <label class="form__label-text" for="contact-call">Номер телефона</label>
                   <input class="form__input" id="contact-call" type="text" placeholder="Номер, пожалуйста">
@@ -100,7 +104,9 @@
                   <label class="form__label-text" for="contact-email">адрес почты</label>
                   <input class="form__input" id="contact-email" type="email" placeholder="Введите почту *" required>
                 </p>
+              </div>
               </fieldset>
+
             </div>
             <div class="story__OS">
               <fieldset class="form__fieldset">
@@ -127,7 +133,7 @@
             </div>
             <div class="story__send">
               <input class="story__send-button" type="submit" value="Отправить форму">
-              <p class="story__send-notes"><span>*</span> — обязательные поля</p>
+              <p class="story__send-notes"><span class="story__send-notes--star">*</span> — обязательные<span> для заполнения</span> поля</p>
             </div>
           </form>
         </div>
