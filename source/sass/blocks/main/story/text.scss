@@ -1,0 +1,56 @@
+.story {
+  &__text {
+    padding: 0;
+    //width: $mobile-width - 40px;
+    //margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+    }
+
+    textarea {
+      width: 100%;
+      padding-top: 15px;
+      height: 201px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .story {
+    &__text {
+      padding-top: 57px;
+      order: 6;
+
+      fieldset {
+        padding-top: 37px;
+        padding-bottom: 51px;
+      }
+
+      textarea {
+        height: 193px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .story {
+    &__text {
+      width: 100%;
+
+      fieldset {
+        padding-top: 34px;
+        padding-bottom: 43px;
+      }
+
+      textarea {
+        height: 128px;
+      }
+    }
+  }
+}

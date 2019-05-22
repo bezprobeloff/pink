@@ -1,0 +1,100 @@
+.story {
+  &__contact {
+    padding: 0;
+    //width: $mobile-width - 40px;
+    //margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      //padding-top: 31px;
+      //padding-bottom: 25px;
+    }
+
+    &-title {
+      display: none;
+    }
+
+    &-item {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      padding-left: 22px;
+      margin-bottom: 6px;
+    }
+
+    input {
+      margin-bottom: 17px;
+      height: 63px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .story {
+    &__contact {
+      padding-top: 57px;
+      order: 4;
+
+      &-title {
+        display: block;
+      }
+
+      &-item {
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      fieldset {
+        padding-top: 37px;
+        padding-bottom: 27px;
+      }
+
+      label {
+        margin: 0;
+      }
+
+      input {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .story {
+    &__contact {
+      width: 100%;
+
+      fieldset {
+        padding-top: 34px;
+        padding-bottom: 14px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-item {
+        padding-top: 0;
+        margin: 0;
+        width: 375px;
+      }
+    }
+  }
+}
