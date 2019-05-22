@@ -219,6 +219,9 @@
     }
 
     &__slogan {
+      padding-top: 43px;
+      padding-bottom: 69px;
+
       @include font(18px, normal, $color_gray,  1.67);
     }
   }

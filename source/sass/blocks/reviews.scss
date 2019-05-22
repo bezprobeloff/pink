@@ -3,7 +3,7 @@
   margin: 0;
 
   &__wrapper {
-    padding: 24px 20px 40px;
+    padding: 24px 20px 35px;
   }
 
   &__slider {
@@ -55,7 +55,8 @@
 @media (min-width: $tablet-width) {
   .reviews {
     &__wrapper {
-      padding-bottom: 70px;
+      //padding-bottom: 70px;
+      padding-bottom: 21px;
     }
 
     &__item {

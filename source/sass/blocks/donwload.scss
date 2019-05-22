@@ -45,16 +45,19 @@
   }
 
   &__icon {
+    position: relative;
     display: block;
     padding: 0;
     margin: 0;
     text-decoration: none;
     font-size: 0;
+    width: 47px;
+    height: 56px;
 
     &::before {
       content: "";
       display: block;
-      position: relative;
+      position: absolute;
       top: 0;
       left: 0;
     }
@@ -63,18 +66,24 @@
       width: 47px;
       height: 56px;
       background: url("../img/logo-apple.svg") no-repeat;
+      background-size: contain;
     }
 
     &--android::before {
+      top: 6px;
+      left: 3px;
       width: 43px;
       height: 47px;
       background: url("../img/logo-android.svg") no-repeat;
+      background-size: contain;
     }
 
     &--windows::before {
+      top: 13px;
       width: 44px;
       height: 41px;
       background: url("../img/logo-microsoft.svg") no-repeat;
+      background-size: contain;
     }
   }
 
@@ -104,7 +113,7 @@
       background-color: transparent;
 
       &::before {
-        top: 10px;
+        top: 9px;
         left: -20px;
         width: 660px;
         height: 545px;

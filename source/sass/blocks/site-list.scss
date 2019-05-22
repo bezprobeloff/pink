@@ -18,6 +18,7 @@
     background-color: $bg_dark_blue;
 
     @include font(18px, bold, $color_white, 1.78);
+    @include upper;
 
     box-shadow: 0 1px 0 0 $color_black,
       inset 0 1px 0 0 rgba($color_white, 0.15);
@@ -48,6 +49,7 @@
       margin: 0;
       margin-right: 80px;
       box-shadow: none;
+      text-transform: none;
 
       &:last-child {
         margin-right: 0;
