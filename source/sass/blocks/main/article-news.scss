@@ -80,6 +80,8 @@
 
 @media (min-width: $desktop-width) {
   .article-news {
+    background-color: $bg_gray;
+
     &__wrapper {
       padding-left: 496px;
       padding-right: 130px;

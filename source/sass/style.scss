@@ -136,6 +136,7 @@ body {
   @include font(18px, bold, $color_white, 2.6);
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .slider {
@@ -198,6 +199,8 @@ body {
   box-sizing: border-box;
   border: 2px solid $color_red;
   border-radius: 50%;
+  background-color: $bg_gray;
+  cursor: pointer;
 }
 
 @import "blocks/form.scss";

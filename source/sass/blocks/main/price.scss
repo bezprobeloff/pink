@@ -333,6 +333,11 @@
 
 @media (min-width: $desktop-width) {
   .price {
+    &::before {
+      height: 83px;
+      background-size: 100% 83px;
+    }
+
     &__wrapper {
       padding-top: 148px;
       padding-bottom: 95px;

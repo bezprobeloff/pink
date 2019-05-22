@@ -79,6 +79,7 @@
     }
 
     &__text {
+      width: 100%;
       order: -1;
 
       @include font(18px, normal, $color_gray, 1.67);
@@ -128,6 +129,8 @@
       background-color: transparent;
       background-repeat: no-repeat;
       background-size: cover;
+      opacity: 0.3;
+      cursor: pointer;
 
       &--back {
         background-image: url("../img/icon-review-arrow-left.svg");
