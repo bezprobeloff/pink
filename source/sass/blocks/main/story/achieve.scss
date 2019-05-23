@@ -9,8 +9,8 @@
     //background-color: $bg_gray;
 
     fieldset {
-      display: flex;
-      flex-direction: column;
+      //display: flex;
+      //flex-direction: column;
     }
 
     &-checkbox {
@@ -73,8 +73,8 @@
     &__achieve {
       fieldset {
         flex-direction: row;
-        padding-top: 37px;
-        padding-bottom: 19px;
+        padding-top: 44px;
+        padding-bottom: 12px;
         //flex-wrap: wrap;
         justify-content: space-between;
       }
@@ -89,8 +89,8 @@
         margin: 0;
         //margin-right: 2px;
         padding-bottom: 43px;
-        padding-right: 10px;
-        width: 26%;
+        //padding-right: 10px;
+        width: 32%;
         //flex: 1;
         &:nth-child(2n) {
           order: 2;
