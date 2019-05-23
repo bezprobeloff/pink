@@ -5,7 +5,7 @@
   background-color: $color_white;
 
   &__wrapper {
-    padding: 46px 20px 48px;
+    padding: 46px 40px 48px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -24,8 +24,10 @@
 @media (min-width: $tablet-width) {
   .subtitle {
     &__wrapper {
-      padding-top: 90px;
-      padding-bottom: 80px;
+      padding-top: 92px;
+      padding-bottom: 76px;
+      padding-left: 45px;
+      padding-right: 45px;
     }
 
     &__text {
@@ -37,7 +39,7 @@
 @media (min-width: $desktop-width) {
   .subtitle {
     &__wrapper {
-      padding: 90px 20px;
+      padding: 92px 280px 88px;
     }
   }
 }

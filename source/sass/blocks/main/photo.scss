@@ -165,7 +165,7 @@
       width: $tablet-width;
 
       &::before {
-        top: 55px;
+        top: 57px;
       }
     }
 
@@ -219,7 +219,7 @@
     }
 
     &__slogan {
-      padding-top: 43px;
+      padding-top: 45px;
       padding-bottom: 69px;
 
       @include font(18px, normal, $color_gray,  1.67);
@@ -253,6 +253,7 @@
       width: $desktop-width;
 
       &::before {
+        top: 54px;
         right: 130px;
       }
     }
