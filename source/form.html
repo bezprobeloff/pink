@@ -134,7 +134,7 @@
               </fieldset>
             </div>
             <div class="story__send">
-              <input class="story__send-button" type="submit" value="Отправить форму">
+              <input class="button-rect story__send-button" type="submit" value="Отправить форму">
               <p class="story__send-notes"><span>*</span> — обязательные<span> для заполнения</span> поля</p>
             </div>
           </form>
@@ -187,5 +187,27 @@
         </section>
       </div>
     </footer>
+    <section class="modal modal--error">
+      <h2 class="visually-hidden">Некорректно введенные данные</h2>
+      <div class="modal__wrapper-text">
+        <p class="modal__title">Что-то пошло не так!</p>
+        <p class="modal__description">Проверьте поля, выделенные красным,
+            скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__wrapper-button">
+        <button class="button-rect modal__button">Ok</button>
+      </div>
+    </section>
+    <section class="modal modal--ok">
+      <h2 class="visually-hidden">Все отлично!</h2>
+      <div class="modal__wrapper-text">
+        <p class="modal__title">Ваша заявка отправлена</p>
+        <p class="modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+          В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="modal__wrapper-button">
+        <button class="button-rect modal__button">Закрыть окно</button>
+      </div>
+    </section>
   </body>
 </html>

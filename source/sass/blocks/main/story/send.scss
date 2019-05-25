@@ -8,6 +8,7 @@
 
     &-button {
       padding: 16px 0;
+      /*
       margin: 0;
 
       @include font(18px, bold, $color_white,  1.67);
@@ -29,6 +30,7 @@
       &:disabled {
         background-color: $color_line_table;
       }
+    */
     }
 
     &-notes {
