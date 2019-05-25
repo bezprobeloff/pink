@@ -1,6 +1,3 @@
-//@import "mixins.scss";
-//@import "../variables.scss";
-
 .main-nav {
   width: 100%;
   margin: 0;
@@ -8,59 +5,90 @@
 
   display: flex;
   flex-direction: column;
+}
 
-  &__toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 3;
-
-    display: block;
-    height: 69px;
-    width: 70px;
-    font-size: 0;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  &--closed {
-    .main-nav__toggle::before {
-      content: "";
+@media (min-width: $mobile-width) and (max-width: $tablet-width-only) {
+  .main-nav {
+    &__toggle {
       position: absolute;
-      top: 21px;
-      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 3;
 
-      width: 50px;
-      height: 2px;
+      display: block;
+      height: 69px;
+      width: 70px;
+      font-size: 0;
 
-      background-color: $color_white;
-      box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
     }
-  }
 
-  &--opened {
-    .main-nav__toggle {
-      &::before,
-      &::after {
+    &--closed {
+      .main-nav__toggle::before {
         content: "";
         position: absolute;
-        top: 31px;
-        left: 24px;
-        width: 30px;
+        top: 21px;
+        left: 0;
+
+        width: 50px;
         height: 4px;
-        background-color: #ffffff;
+
+        background-color: $color_white;
+        box-shadow: 0 10px 0 0 $color_white, 0 20px 0 0 $color_white;
       }
 
-      &::before {
-        transform: rotate(45deg);
-        box-shadow: none;
+      .main-nav__toggle:hover::before,
+      .main-nav__toggle:active::before {
+        background-color: $color_red;
+        box-shadow: 0 10px 0 0 $color_red, 0 20px 0 0 $color_red;
       }
 
-      &::after {
-        transform: rotate(-45deg);
+      .main-nav__toggle:active::before {
+        opacity: 0.3;
       }
+    }
+
+    &--opened {
+      .main-nav__toggle {
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 31px;
+          left: 24px;
+          width: 30px;
+          height: 4px;
+          background-color: $color_white;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+          box-shadow: none;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+
+      .main-nav__toggle:hover::before,
+      .main-nav__toggle:hover::after,
+      .main-nav__toggle:active::before,
+      .main-nav__toggle:active::after {
+        background-color: $color_red;
+      }
+
+      .main-nav__toggle:active::before,
+      .main-nav__toggle:active::after {
+        opacity: 0.3;
+      }
+    }
+
+    &--nojs &__toggle {
+      display: none;
     }
   }
 }

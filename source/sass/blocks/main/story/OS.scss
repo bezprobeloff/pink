@@ -4,21 +4,6 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    //background-color: $bg_gray;
-
-    fieldset {
-      //display: flex;
-      //flex-direction: column;
-      //padding-bottom: 6px;
-    }
-
-    /*
-    &-title {
-      //padding-top: 38px;
-      padding-top: 44px;
-      padding-bottom: 35px;
-    }
-    */
 
     &-radio {
       padding: 0;
@@ -28,7 +13,6 @@
       label {
         padding-left: 69px;
       }
-
 
       input + label::before {
         content: "";
@@ -41,6 +25,14 @@
         background-color: $color_white;
         border: 2px solid $color_line_table;
         border-radius: 50%;
+      }
+
+      input:hover + label::before {
+        border: 2px solid $color_gray;
+      }
+
+      input:active + label::before {
+        border: 2px solid $color_red;
       }
 
       input:checked + label::after {

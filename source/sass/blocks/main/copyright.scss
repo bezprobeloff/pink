@@ -26,8 +26,13 @@
     height: 34px;
     fill: $color_red;
 
-    &:hover {
+    &:hover,
+    &:active {
       fill: $color_gray;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

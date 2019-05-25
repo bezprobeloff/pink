@@ -66,6 +66,34 @@
 
       @include font(24px, 300, $color_red, normal);
       text-align: center;
+
+      &--link {
+        a {
+          position: relative;
+          color: inherit;
+          text-decoration: none;
+        }
+
+        a:hover,
+        a:active {
+          color: $color_gray;
+
+          &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: $color_gray;
+            left: 0;
+            bottom: 2px;
+          }
+        }
+
+        a:active {
+          opacity: 0.3;
+        }
+      }
     }
   }
 }

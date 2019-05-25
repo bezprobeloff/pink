@@ -27,6 +27,18 @@
     }
   }
 
+  &__button {
+    &:hover,
+    &:active {
+      background-color: $color_white;
+      color: $color_red;
+    }
+
+    &:active {
+      color: rgba($color_red, 0.3);
+    }
+  }
+
   &__list {
     display: flex;
     justify-content: space-around;

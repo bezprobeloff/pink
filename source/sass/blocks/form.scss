@@ -20,17 +20,18 @@
 
     @include font(14px, normal, $color_red,  2.14);
     @include upper;
+    cursor: pointer;
   }
 
   &__label-value {
     position: relative;
-    //display: flex;
     padding: 0;
     padding-top: 7px;
     margin: 0;
 
     @include font(18px, normal, $color_gray,  2.2);
     text-align: center;
+    cursor: pointer;
   }
 
   &__input {
@@ -39,10 +40,21 @@
     margin: 0;
     box-sizing: border-box;
     border: solid 2px $color_line_table;
+    outline: none;
+    cursor: pointer;
+
+    @include font(18px, normal, $color_gray,  1.67);
+
+    &:hover {
+      border: solid 2px $color_gray;
+    }
+
+    &:focus {
+      border: solid 2px $color_red;
+    }
 
     &::placeholder {
       padding: 0;
-      //padding-left: 20px;
       margin: 0;
 
       @include font(18px, normal, $color_gray,  1.67);

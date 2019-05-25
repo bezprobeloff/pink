@@ -59,7 +59,8 @@ body {
 
 .logo-pink-footer {
   width: 147px;
-  height: 40px;
+  height: 41px;
+  object-fit: contain;
 
   &__glasses-full {
     fill: $color_red;
@@ -110,6 +111,10 @@ body {
     &__star {
       display: inline-block;
     }
+
+    &__star {
+      fill: $color_red;
+    }
   }
 
   .logo-pink-footer {
@@ -136,6 +141,7 @@ body {
   @include font(18px, bold, $color_white, 2.6);
   text-decoration: none;
   text-align: center;
+  outline: none;
   cursor: pointer;
 }
 
@@ -178,6 +184,18 @@ body {
       background-color: $color_gray;
     }
 
+    &:hover {
+      &::before {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 0.1;
+      }
+    }
+
     &--active {
       &::before {
         left: 0;
@@ -186,6 +204,13 @@ body {
         border: solid 3px $color_gray;
         background-color: $color_white;
         opacity: 1;
+      }
+
+      &:active,
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
       }
     }
   }
@@ -201,6 +226,11 @@ body {
   border-radius: 50%;
   background-color: $bg_gray;
   cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $color_red;
+  }
 }
 
 @import "blocks/form.scss";

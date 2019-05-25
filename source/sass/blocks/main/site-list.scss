@@ -27,6 +27,29 @@
       text-decoration: none;
       color: inherit;
     }
+
+    &:hover {
+      a {
+        color: $color_red;
+      }
+    }
+
+    &:active {
+      a {
+        color: $color_red;
+        opacity: 0.3;
+      }
+    }
+
+    &--active {
+      &:hover,
+      &:active {
+        a {
+          opacity: 1;
+          color: $color_white;
+        }
+      }
+    }
   }
 
   .main-nav--closed &__item {
@@ -50,6 +73,38 @@
       margin-right: 80px;
       box-shadow: none;
       text-transform: none;
+
+      &:active {
+        a {
+          color: $color_white;
+          opacity: 0.3;
+        }
+      }
+
+      &--active {
+        &:hover,
+        &:active {
+          a {
+            opacity: 1;
+            color: $color_white;
+          }
+        }
+
+        a {
+          position: relative;
+
+          &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: $color_white;
+            left: 0;
+            bottom: -9px;
+          }
+        }
+      }
 
       &:last-child {
         margin-right: 0;

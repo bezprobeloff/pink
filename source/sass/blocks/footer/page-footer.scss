@@ -17,11 +17,17 @@
     border: none;
 
     &-image {
+      object-fit: contain;
       display: block;
       fill: $color_gray;
 
       &:hover {
         fill: $color_red;
+      }
+
+      &:active {
+        fill: $color_gray;
+        opacity: 0.3;
       }
     }
   }

@@ -30,6 +30,11 @@
       &:hover {
         fill: $color_red;
       }
+
+      &:active {
+        fill: $color_white;
+        opacity: 0.3;
+      }
     }
   }
 }

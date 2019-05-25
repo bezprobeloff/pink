@@ -22,13 +22,15 @@
   }
 
   &__link {
+    position: relative;
     padding: 0;
     margin: 0;
     font-size: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
     width: 46px;
     height: 46px;
     //opacity: 0.1;
@@ -39,24 +41,37 @@
     &:hover {
       border: solid 3px $color_gray;
     }
+
+    &:active {
+      border: solid 3px rgba($color_gray, 0.1);
+
+      .social__icon {
+        opacity: 0.3;
+      }
+    }
   }
 
   &__icon {
-    width: 100%;
-    height: 100%;
+    position: absolute;
     fill: $color_red;
 
     &--twitter {
+      top: 15px;
+      left: 14px;
       width: 19px;
       height: 15px;
     }
 
     &--facebook {
+      top: 12px;
+      left: 18px;
       width: 9px;
       height: 19px;
     }
 
     &--youtube {
+      top: 15px;
+      left: 17px;
       width: 15px;
       height: 14px;
     }

@@ -6,12 +6,6 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    //background-color: $bg_gray;
-
-    fieldset {
-      //display: flex;
-      //flex-direction: column;
-    }
 
     &-checkbox {
       padding: 0;
@@ -33,6 +27,14 @@
         height: 35px;
         background-color: $color_white;
         border: 2px solid $color_line_table;
+      }
+
+      input:hover + label::before {
+        border: 2px solid $color_gray;
+      }
+
+      input:active + label::before {
+        border: 2px solid $color_red;
       }
 
       input:checked + label::before {
