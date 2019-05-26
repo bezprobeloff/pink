@@ -7,9 +7,7 @@
     display: block;
     padding: 0;
     margin: 0;
-
     min-height: 387px;
-
 
     &__wrapper {
       position: relative;
@@ -27,7 +25,6 @@
         left: 20px;
         width: 238px;
         height: 276px;
-
         background: url("../img/icon-timer.svg") no-repeat;
         background-size: contain;
       }

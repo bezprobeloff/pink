@@ -3,27 +3,13 @@
   margin: 0;
 
   &__wrapper {
-    //position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 43px;
     padding-right: 20px;
     padding-left: 20px;
-    //margin: 0;
     box-sizing: border-box;
-    /*
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: -35px;
-      border-left: 160px solid transparent;
-      border-right: 160px solid transparent;
-      border-top: 35px solid $color_white;
-      z-index: 3;
-    }
-    */
   }
 
   &__title {

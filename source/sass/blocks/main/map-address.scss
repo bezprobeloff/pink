@@ -8,24 +8,50 @@
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-size: 100% 35px;
-    //background-position: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 35px;
-    z-index: 3;
+    z-index: 4;
   }
 
   iframe {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     border: none;
     outline: none;
   }
 
+  picture {
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 320px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 58px;
+      right: 54px;
+      background-image: url("../img/icon-map-marker.svg");
+      background-repeat: no-repeat;
+      background-size: 36px 35px;
+      width: 36px;
+      height: 35px;
+      z-index: 2;
+    }
+  }
+
   &__image {
-    position: absolute;
+    padding: 0;
+    margin: 0;
+    position: relative;
     z-index: 1;
     top: 0;
     left: 0;
@@ -42,14 +68,23 @@
       height: 70px;
       background-size: 100% 70px;
     }
-  }
 
-  iframe {
-    height: 375px;
-  }
+    iframe {
+      height: 375px;
+    }
 
-  &__image {
-    height: 375px;
+    picture {
+      width: 660px;
+
+      &::before {
+        top: 317px;
+        right: 224px;
+      }
+    }
+
+    &__image {
+      height: 375px;
+    }
   }
 }
 
@@ -61,13 +96,22 @@
       height: 98px;
       background-size: 100% 98px;
     }
-  }
 
-  iframe {
-    height: 498px;
-  }
+    iframe {
+      height: 498px;
+    }
 
-  &__image {
-    height: 498px;
+    picture {
+      width: 1200px;
+
+      &::before {
+        top: 330px;
+        right: 498px;
+      }
+    }
+
+    &__image {
+      height: 498px;
+    }
   }
 }

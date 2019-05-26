@@ -55,7 +55,6 @@
 @media (min-width: $tablet-width) {
   .reviews {
     &__wrapper {
-      //padding-bottom: 70px;
       padding-bottom: 21px;
     }
 
@@ -119,6 +118,7 @@
     }
 
     &__slider {
+      position: relative;
       display: block;
       margin-top: 48px;
       width: 22px;
@@ -127,17 +127,28 @@
       border: none;
       outline: none;
       background-color: transparent;
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.3;
       cursor: pointer;
 
-      &--back {
-        background-image: url("../img/icon-review-arrow-left.svg");
+      &-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 22px;
+        height: 41px;
+        fill: $color_gray;
+        opacity: 0.3;
       }
 
-      &--next {
-        background-image: url("../img/icon-review-arrow-right.svg");
+      &:hover {
+        .reviews__slider-icon {
+          opacity: 0.6;
+        }
+      }
+
+      &:active {
+        .reviews__slider-icon {
+          opacity: 0.1;
+        }
       }
     }
 

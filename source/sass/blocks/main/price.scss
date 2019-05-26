@@ -132,7 +132,6 @@
         content: "";
         position: absolute;
         background-image: url("../img/icon-yes.svg");
-        //background-image: url("../img/sprite.svg#icon-yes.svg");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -244,8 +243,6 @@
 
       border-top: 2px solid transparent;
       border-left: 2px solid transparent;
-      //border-top: none;
-      //border-left: none;
       border-right: 2px solid $color_line_table;
       border-bottom: none;
 
@@ -262,9 +259,6 @@
         &::after {
           top: 1px;
           left: 6px;
-
-          //@include font(14px, normal, $color_white,  2.1);
-          //@include upper;
         }
 
         &::before {
@@ -289,11 +283,9 @@
     }
 
     &__cell-function {
-      //width: 100%;
       width: 153px;
       padding: 6px 12px 8px;
       border-top: 2px solid transparent;
-      //border-top: none;
       border-right: 2px solid $color_line_table;
       border-left: 2px solid $color_line_table;
       border-bottom: 2px solid $color_line_table;
@@ -305,14 +297,10 @@
     }
 
     &__cell-free {
-      //width: 100%;
       width: 153px;
-
       border-top: 2px solid transparent;
-      //border-top: none;
       border-right: 2px solid $color_line_table;
       border-left: 2px solid transparent;
-      //border-left: none;
       border-bottom: 2px solid $color_line_table;
     }
 

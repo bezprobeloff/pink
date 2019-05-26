@@ -9,7 +9,6 @@
 
     &--slogan {
       padding-top: 40px;
-      //padding-bottom: 33px;
       padding-bottom: 0;
     }
 
@@ -168,9 +167,6 @@
 
 @media (min-width: $desktop-width) {
   .features {
-
-    //background-color: $bg_gray;
-
     &__wrapper {
       &--slogan {
         padding-top: 67px;
@@ -179,7 +175,7 @@
 
       &--list {
         padding-bottom: 28px;
-        //display: none;
+
         &::before {
           height: 100px;
           background-size: 100% 100px;

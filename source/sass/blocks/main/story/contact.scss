@@ -1,18 +1,8 @@
 .story {
   &__contact {
     padding: 0;
-    //width: $mobile-width - 40px;
-    //margin: 0 auto;
-
     display: flex;
     flex-direction: column;
-
-    fieldset {
-      //display: flex;
-      //flex-direction: column;
-      //padding-top: 31px;
-      //padding-bottom: 25px;
-    }
 
     &-title {
       display: none;

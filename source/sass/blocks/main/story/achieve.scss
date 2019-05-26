@@ -16,13 +16,11 @@
         padding-left: 69px;
       }
 
-
       input + label::before {
         content: "";
         position: absolute;
         left: 0;
         top: 0;
-
         width: 35px;
         height: 35px;
         background-color: $color_white;
@@ -38,7 +36,6 @@
       }
 
       input:checked + label::before {
-        //background-image: url("../img/icon-yes.svg");
         background-image: url("../img/icon-tick.svg");
         background-size: 22px 16px;
         background-repeat: no-repeat;
@@ -78,7 +75,6 @@
         flex-direction: row;
         padding-top: 44px;
         padding-bottom: 12px;
-        //flex-wrap: wrap;
         justify-content: space-between;
       }
 
@@ -90,11 +86,9 @@
 
       &-checkbox {
         margin: 0;
-        //margin-right: 2px;
         padding-bottom: 43px;
-        //padding-right: 10px;
         width: 32%;
-        //flex: 1;
+
         &:nth-child(2n) {
           order: 2;
         }
