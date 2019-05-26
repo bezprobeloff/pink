@@ -38,7 +38,8 @@
       }
 
       input:checked + label::before {
-        background-image: url("../img/icon-yes.svg");
+        //background-image: url("../img/icon-yes.svg");
+        background-image: url("../img/icon-tick.svg");
         background-size: 22px 16px;
         background-repeat: no-repeat;
         background-position: 7px 9px;
