@@ -90,11 +90,9 @@
   .reviews {
     &__wrapper {
       position: relative;
-      padding-top: 166px;
-      padding-bottom: 40px;
+      padding: 166px 10px 40px;
       display: flex;
       justify-content: space-between;
-      width: 980px;
 
 
       &::before {

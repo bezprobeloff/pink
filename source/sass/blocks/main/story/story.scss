@@ -102,8 +102,8 @@
 @media (min-width: $desktop-width) {
   .story {
     &__wrapper {
-      padding-left: 130px;
-      padding-right: 130px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     &__form {
@@ -113,10 +113,6 @@
 
     &__title {
       padding: 0 70px;
-
-      br {
-        display: none;
-      }
     }
   }
 }

@@ -28,6 +28,6 @@ function setup_for_width(mql) {
   }
 }
 
-var mql = window.matchMedia("(min-width: 320px) and (max-width: 1199px)");
+var mql = window.matchMedia("(min-width: 320px) and (max-width: 959px)");
 mql.addListener(setup_for_width);
 setup_for_width(mql);

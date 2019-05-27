@@ -50,12 +50,14 @@
       padding: 0;
       margin: 0;
       margin-bottom: 10px;
+      width: 200px;
 
       @include font(30px, bold, $color_black, 1.2);
     }
 
     &__desc {
       padding: 0;
+      padding-right: 25px;
       margin: 0;
       margin-bottom: 10px;
 
@@ -80,22 +82,22 @@
     background-color: $bg_gray;
 
     &__wrapper {
-      padding-left: 496px;
-      padding-right: 130px;
-      padding-top: 109px;
-      padding-bottom: 46px;
-      min-height: 429px;
+      padding-left: 376px;
+      padding-right: 10px;
+      padding-top: 111px;
+      padding-bottom: 45px;
+      min-height: 431px;
 
       &::before {
-        top: 17px;
-        left: 130px;
+        top: 20px;
+        left: 10px;
         width: 298px;
         height: 345px;
       }
 
       &::after {
-        top: 87px;
-        left: 153px;
+        top: 89px;
+        left: 33px;
         width: 253px;
         height: 253px;
         border: 17px solid $color_red;
@@ -105,14 +107,12 @@
     }
 
     &__title {
+      width: 100%;
       padding-bottom: 11px;
-
-      br {
-        display: none;
-      }
     }
 
     &__desc {
+      padding-right: 50px;
       margin-bottom: 31px;
       font-size: 18px;
       line-height: 1.67;

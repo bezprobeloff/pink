@@ -64,6 +64,8 @@
 
 @media (min-width: $tablet-width) {
   .map-address {
+    margin-bottom: 7px;
+
     &::before {
       height: 70px;
       background-size: 100% 70px;
@@ -90,7 +92,7 @@
 
 @media (min-width: $desktop-width) {
   .map-address {
-    margin-bottom: 36px;
+    margin-bottom: 40px;
 
     &::before {
       height: 98px;

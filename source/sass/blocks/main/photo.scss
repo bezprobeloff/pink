@@ -71,7 +71,7 @@
   &__post {
     display: flex;
     flex-direction: column;
-    padding: 18px 17px 20px;
+    padding: 18px 17px 25px;
     margin: 0;
 
     @include font(14px, normal, $color_gray,  24px);
@@ -104,7 +104,7 @@
   &__like {
     padding: 0;
     margin: 0;
-    padding-top: 9px;
+    padding-top: 15px;
     display: flex;
     align-items: center;
 
@@ -222,7 +222,7 @@
 @media (min-width: $desktop-width) {
   .photo {
     &__wrapper {
-      padding: 0 130px;
+      padding: 0 10px;
     }
 
     &__item {
@@ -246,7 +246,7 @@
 
       &::before {
         top: 54px;
-        right: 130px;
+        right: 10px;
       }
     }
 
