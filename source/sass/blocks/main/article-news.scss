@@ -53,6 +53,10 @@
       width: 200px;
 
       @include font(30px, bold, $color_black, 1.2);
+
+      span {
+        display: block;
+      }
     }
 
     &__desc {
@@ -109,6 +113,10 @@
     &__title {
       width: 100%;
       padding-bottom: 11px;
+
+      span {
+        display: inline;
+      }
     }
 
     &__desc {
