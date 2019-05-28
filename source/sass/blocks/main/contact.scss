@@ -111,6 +111,11 @@
       &:last-child {
         padding-bottom: 0;
       }
+
+      &-text {
+        padding-top: 1px;
+        width: 215px;
+      }
     }
   }
 }
