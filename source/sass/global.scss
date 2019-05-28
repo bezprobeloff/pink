@@ -39,32 +39,6 @@ body {
   color: $color_base;
 }
 
-.logo-pink-header {
-  width: 75px;
-  height: 22px;
-
-  &__glasses-holey,
-  &__glasses-full,
-  &__star {
-    display: none;
-  }
-}
-
-.logo-pink-footer {
-  width: 147px;
-  height: 41px;
-  object-fit: contain;
-
-  &__glasses-full {
-    fill: $color_red;
-  }
-
-  &__glasses-holey,
-  &__star {
-    display: none;
-  }
-}
-
 .wrapper {
   width: 320px;
   margin: 0 auto;
@@ -75,50 +49,11 @@ body {
   .wrapper {
     width: $tablet-width;
   }
-
-  .logo-pink-header {
-    width: 147px;
-    height: 40px;
-
-    &__text {
-      transform: translate(0, 0);
-    }
-
-    &__glasses-full {
-      display: inline-block;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
   .wrapper {
     width: $desktop-width;
-  }
-
-  .logo-pink-header {
-    &__glasses-full {
-      display: none;
-    }
-
-    &__glasses-holey,
-    &__star {
-      display: inline-block;
-    }
-
-    &__star {
-      fill: $color_red;
-    }
-  }
-
-  .logo-pink-footer {
-    &__glasses-full {
-      display: none;
-    }
-
-    &__glasses-holey,
-    &__star {
-      display: inline-block;
-    }
   }
 }
 

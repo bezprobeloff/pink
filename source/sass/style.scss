@@ -1,8 +1,9 @@
-@import "mixins.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "global.scss";
 @import "blocks/form.scss";
 @import "blocks/modal.scss";
+@import "blocks/header/logo-pink-header.scss";
 @import "blocks/header/page-header.scss";
 @import "blocks/main/main-nav.scss";
 @import "blocks/main/site-list.scss";
@@ -26,5 +27,6 @@
 @import "blocks/main/story/OS.scss";
 @import "blocks/main/story/text.scss";
 @import "blocks/main/story/send.scss";
+@import "blocks/footer/logo-pink-footer.scss";
 @import "blocks/footer/page-footer.scss";
 @import "global-root.scss";

@@ -1,0 +1,42 @@
+.logo-pink-header {
+  width: 75px;
+  height: 22px;
+
+  &__glasses-holey,
+  &__glasses-full,
+  &__star {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo-pink-header {
+    width: 147px;
+    height: 40px;
+
+    &__text {
+      transform: translate(0, 0);
+    }
+
+    &__glasses-full {
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-pink-header {
+    &__glasses-full {
+      display: none;
+    }
+
+    &__glasses-holey,
+    &__star {
+      display: inline-block;
+    }
+
+    &__star {
+      fill: $color_red;
+    }
+  }
+}

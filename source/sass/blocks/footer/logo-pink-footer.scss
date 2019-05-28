@@ -1,0 +1,27 @@
+.logo-pink-footer {
+  width: 147px;
+  height: 41px;
+  object-fit: contain;
+
+  &__glasses-full {
+    fill: $color_red;
+  }
+
+  &__glasses-holey,
+  &__star {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-pink-footer {
+    &__glasses-full {
+      display: none;
+    }
+
+    &__glasses-holey,
+    &__star {
+      display: inline-block;
+    }
+  }
+}
