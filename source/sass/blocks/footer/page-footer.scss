@@ -20,16 +20,17 @@
       object-fit: contain;
       display: block;
       fill: $color_gray;
-
-      &:hover {
-        fill: $color_red;
-      }
-
-      &:active {
-        fill: $color_gray;
-        opacity: 0.3;
-      }
     }
+  }
+
+  a[href]:hover &__logo-image {
+    cursor: pointer;
+    fill: $color_red;
+  }
+
+  a[href]:active &__logo-image {
+    fill: $color_gray;
+    opacity: 0.3;
   }
 }
 

@@ -26,16 +26,17 @@
       padding-top: 22px;
       padding-left: 20px;
       fill: $color_white;
-
-      &:hover {
-        fill: $color_red;
-      }
-
-      &:active {
-        fill: $color_white;
-        opacity: 0.3;
-      }
     }
+  }
+
+  a[href]:hover &__logo-image {
+    cursor: pointer;
+    fill: $color_red;
+  }
+
+  a[href]:active &__logo-image {
+    fill: $color_white;
+    opacity: 0.3;
   }
 }
 
