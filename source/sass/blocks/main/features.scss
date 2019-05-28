@@ -112,6 +112,8 @@
       &--slogan {
         padding-top: 48px;
         padding-bottom: 48px;
+        padding-left: 30px;
+        padding-right: 30px;
       }
     }
 
@@ -119,6 +121,10 @@
       margin: 0;
       line-height: 1.2;
       font-size: 40px;
+
+      &--sub {
+        padding: 0 10px;
+      }
     }
 
     &__list {
@@ -171,6 +177,8 @@
       &--slogan {
         padding-top: 67px;
         padding-bottom: 76px;
+        padding-left: 110px;
+        padding-right: 110px;
       }
 
       &--list {
