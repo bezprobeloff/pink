@@ -1,0 +1,15 @@
+.button {
+  margin: 0;
+  padding: 0;
+  height: 55px;
+
+  box-sizing: border-box;
+  border: solid 3px $color_white;
+  border-radius: 27px;
+
+  @include font(18px, bold, $color_white, 2.6);
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}

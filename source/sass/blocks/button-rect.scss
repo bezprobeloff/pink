@@ -1,0 +1,24 @@
+.button-rect {
+  padding: 0;
+  margin: 0;
+
+  @include font(18px, bold, $color_white,  1.67);
+  @include upper;
+  text-align: center;
+  border: none;
+  background-color: $color_jade-green;
+  outline: none;
+
+  &:hover,
+  &:active {
+    background-color: $color_jade-green-active;
+  }
+
+  &:active {
+    color: rgba($color_white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $color_line_table;
+  }
+}
