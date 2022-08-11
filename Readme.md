@@ -1,17 +1,17 @@
-# Проект: Pink
+<h1 align="center">Pink</h1>
+<p align="center">
+    <img alt="Quality" src="https://img.shields.io/badge/status-release-orange.svg" >
+    <img alt="Made by: Bezprobeloff" src="https://img.shields.io/badge/made%20by-Bezprobeloff-blue" />
+</p>
 
-### Обзор
-* Интро
-* Технологии
-* Где посмотреть
+Ссылка на deploy проекта в gh-pages: **[Pink](https://bezprobeloff.github.io/pink/build/index.html)**
 
-**Интро**
+
+**Обзор**
 
 Проект Pink это сайт сервиса загрузки фотографий и где можно скачать приложение
 
 **Технологии**
-
-Использованы следующие технологии:
 
 * __HTML5__
 * __Sass__
@@ -19,7 +19,3 @@
 * __Flexbox__
 * __Семантическая__ вёрстка
 * __Gulp__
-
-**Где посмотреть**
-
-Вот здесь &rarr; [Pink](https://bezprobeloff.github.io/pink/build/index.html).
